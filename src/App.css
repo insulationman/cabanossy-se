@@ -4,7 +4,7 @@
 }
 
 .logo-container {
-  height: 10rem;
+  height: 14rem;
   position: sticky;
   top: 0;
   box-sizing: border-box;
@@ -32,18 +32,15 @@
   padding: 2rem;
   margin: 0 1rem;
   margin-bottom: 2rem;
-  border-radius: 1rem;
+  border-radius: 0.2rem;
   box-shadow: 0 0 1em #00000022;
   background-color: #f8f8f8;
   transition: transform 300ms;
   position: sticky;
-  top: 10rem;
-  background-color: #7cf2ff;
+  top: 14rem;
+  background-color: #f9ef81;
 }
 
 /* .card:last-of-type {
   margin-bottom: 0;
 } */
-
-html {
-}

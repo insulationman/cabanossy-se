@@ -1,17 +1,30 @@
-import Logo from "./assets/logo.svg";
+import Logo from "./assets/Cabanossy-Snurra_Rityta 1.svg";
 import "./App.css";
+import { useEffect, useRef } from "react";
 
 function App() {
+  const imageRef = useRef<HTMLImageElement | null>(null);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      requestAnimationFrame(() => {
+        const rotation = (window.scrollY / 1) % 360;
+        if (imageRef.current != undefined) {
+          imageRef.current.style.transform = `rotate(${rotation}deg)`;
+        }
+      });
+    });
+  }, []);
   return (
     <>
       <div className="logo-container">
-        <img src={Logo} className="logo" alt="logo" />
+        <img src={Logo} className="logo" alt="logo" ref={imageRef} />
       </div>
       <div className="card">
         <h1>Passion for web and code</h1>
         <p>
           Cabanossy is a company that is passionate about web development and
-          code. Together we can create amazing websites and applications.
+          code. Together we create amazing websites and applications.
         </p>
         <p></p>
       </div>
