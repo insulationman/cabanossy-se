@@ -25,8 +25,8 @@ function App() {
       <div className="card">
         <h1>A passion for web and coding</h1>
         <p>
-          Cabanossy is a company that is passionate about web development and
-          code. Together we create amazing websites and applications.
+          At Cabanossy we are passionate – about web development and code in
+          particular. Let’s create amazing websites and applications together.
         </p>
         <p></p>
       </div>

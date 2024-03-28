@@ -30,6 +30,8 @@ body {
 
 h1 {
   color: #000000;
+  line-height: 2rem;
+  font-size: 1.8rem;
 }
 
 p {
