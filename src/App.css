@@ -27,10 +27,10 @@
 .card {
   display: flex;
   flex-direction: column;
-  height: 15rem;
+  min-height: 15rem;
   align-items: start;
   padding: 2rem;
-  margin: 0 1.5rem;
+  margin: 0 1rem;
   margin-bottom: 2rem;
   border-radius: 1rem;
   box-shadow: 0 0 1em #00000022;
