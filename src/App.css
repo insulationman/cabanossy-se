@@ -21,7 +21,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  min-height: 15rem;
+  min-height: 12rem;
   align-items: start;
   padding: 2rem;
   margin: 0 1rem;
@@ -35,6 +35,16 @@
   background-color: #f9ef81;
 }
 
-/* .card:last-of-type {
-  margin-bottom: 0;
-} */
+.footer {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem;
+}
+.contact-link {
+  width: 50px;
+  padding: 5px;
+}
+
+.contact-link:first-of-type {
+  margin-left: auto;
+}

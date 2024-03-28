@@ -1,6 +1,8 @@
 import Logo from "./assets/Cabanossy-Snurra_Rityta 1.svg";
 import "./App.css";
 import { useEffect, useRef } from "react";
+import Email from "./assets/Email.svg";
+import LinkedIn from "./assets/LinkedIn.svg";
 
 function App() {
   const imageRef = useRef<HTMLImageElement | null>(null);
@@ -41,9 +43,21 @@ function App() {
           Want to know more? Get in touch we will get back to you as soon as
           possible.
         </p>
-        <p>
-          <a href="mailto:info@cabanossy.se?subject=Contact">Email us</a>
-        </p>
+      </div>
+      <div className="footer">
+        <span>© 2021 Cabanossy</span>
+        <a
+          href="mailto:info@cabanossy.se?subject=Contact"
+          className="contact-link"
+        >
+          <img src={Email} alt="email" />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/cabanossy"
+          className="contact-link"
+        >
+          <img src={LinkedIn} alt="linkedin" />
+        </a>
       </div>
     </>
   );
