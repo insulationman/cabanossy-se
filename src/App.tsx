@@ -28,7 +28,6 @@ function App() {
           At Cabanossy we are passionate – about web development and code in
           particular. Let’s create amazing websites and applications together.
         </p>
-        <p></p>
       </div>
       <div className="card">
         <h1>Grow with IT</h1>
@@ -40,8 +39,8 @@ function App() {
       <div className="card">
         <h1>Get in touch</h1>
         <p>
-          Want to know more? Get in touch we will get back to you as soon as
-          possible.
+          Do you want to know more?Get in touch – we will get back to you as
+          soon as possible.
         </p>
       </div>
       <div className="footer">
