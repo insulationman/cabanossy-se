@@ -3,6 +3,8 @@ import "./App.css";
 import { useEffect, useRef } from "react";
 import Email from "./assets/Email.svg";
 import LinkedIn from "./assets/LinkedIn.svg";
+import PilUpp from "./assets/Pil-Upp.svg";
+import PilNer from "./assets/Pil-Ner.svg";
 
 function App() {
   const imageRef = useRef<HTMLImageElement | null>(null);
@@ -28,6 +30,7 @@ function App() {
           At Cabanossy we are passionate – about web development and code in
           particular. Let’s create amazing websites and applications together.
         </p>
+        <img src={PilNer} className="pil" alt="pilned" />
       </div>
       <div className="card">
         <h1>Grow with IT</h1>
@@ -35,6 +38,7 @@ function App() {
           Most businesses can use new and established technologies to grow and
           expand. We can help you with that.
         </p>
+        <img src={PilNer} className="pil" alt="pilned" />
       </div>
       <div className="card">
         <h1>Get in touch</h1>
@@ -42,6 +46,7 @@ function App() {
           Do you want to know more?Get in touch – we will get back to you as
           soon as possible.
         </p>
+        <img src={PilUpp} className="pil" alt="pilupp" />
       </div>
       <div className="footer">
         <span>© 2021 Cabanossy</span>
