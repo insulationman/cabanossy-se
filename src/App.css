@@ -27,7 +27,7 @@
   margin: 0 1rem;
   margin-bottom: 2rem;
   border-radius: 0.2rem;
-  box-shadow: 0 0 1em #00000022;
+  box-shadow: 0 0 0.5em #00000022;
   background-color: #f8f8f8;
   transition: transform 300ms;
   position: sticky;
@@ -39,9 +39,10 @@
   display: flex;
   align-items: center;
   padding: 1rem 1rem;
+  font-size: 0.7rem;
 }
 .contact-link {
-  width: 50px;
+  width: 30px;
   padding: 5px;
 }
 

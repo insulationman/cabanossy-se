@@ -23,7 +23,7 @@ function App() {
         <img src={Logo} className="logo" alt="logo" ref={imageRef} />
       </div>
       <div className="card">
-        <h1>Passion for web and code</h1>
+        <h1>A passion for web and coding</h1>
         <p>
           Cabanossy is a company that is passionate about web development and
           code. Together we create amazing websites and applications.
@@ -31,7 +31,7 @@ function App() {
         <p></p>
       </div>
       <div className="card">
-        <h1>Growing with IT</h1>
+        <h1>Grow with IT</h1>
         <p>
           Most businesses can use new and established technologies to grow and
           expand. We can help you with that.
