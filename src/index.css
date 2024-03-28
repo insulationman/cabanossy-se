@@ -1,17 +1,16 @@
 :root {
   font-family: "Ubuntu", "Segoe UI", "Roboto", "Oxygen", "Cantarell",
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  /* line-height: 1.5; */
+  font-size: larger;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #00c1d5;
 }
 
 a {
@@ -28,13 +27,18 @@ body {
   /* display: flex;
   place-items: center; */
   min-width: 320px;
-  min-height: 100dvh;
+  /* min-height: 100dvh; */
+  height: 100%;
+  background-color: #00c1d5;
 }
 
-/* h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-} */
+h1 {
+  color: #d75353;
+}
+
+p {
+  color: #3b4094;
+}
 
 button {
   border-radius: 8px;
@@ -53,17 +57,4 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
