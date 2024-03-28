@@ -43,7 +43,7 @@ function App() {
       <div className="card">
         <h1>Get in touch</h1>
         <p>
-          Do you want to know more?Get in touch – we will get back to you as
+          Do you want to know more? Get in touch – we will get back to you as
           soon as possible.
         </p>
         <img src={PilUpp} className="pil" alt="pilupp" />
