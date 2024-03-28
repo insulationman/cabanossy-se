@@ -49,3 +49,13 @@
 .contact-link:first-of-type {
   margin-left: auto;
 }
+
+@media only screen and (max-width: 600px) {
+  .card {
+    top: 10rem;
+  }
+  .logo-container {
+    height: 10rem;
+    padding: 1.5rem;
+  }
+}
