@@ -49,7 +49,7 @@ function App() {
         <img src={PilUpp} className="pil" alt="pilupp" />
       </div>
       <div className="footer">
-        <span>© 2021 Cabanossy</span>
+        <span>© {new Date().getFullYear()} Cabanossy</span>
         <a
           href="mailto:info@cabanossy.se?subject=Contact"
           className="contact-link"
