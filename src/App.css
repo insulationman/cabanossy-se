@@ -32,7 +32,7 @@
   transition: transform 300ms;
   position: sticky;
   top: 14rem;
-  background-color: #f9ef81;
+  background-color: hsl(var(--theme-hue), 90.91%, 74.12%);
 }
 
 .footer {

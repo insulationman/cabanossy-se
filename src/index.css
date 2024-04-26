@@ -7,7 +7,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #ddd670;
+  --theme-hue: 55;
+  background-color: hsl(var(--theme-hue), 61.58%, 65.29%);
+  /* filter: brightness(50); */
 }
 
 a {
