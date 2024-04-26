@@ -46,7 +46,7 @@ function App() {
         </p>
         <img src={PilNer} className="pil" alt="pilned" />
       </div>
-      <div className="card">
+      {/* <div className="card">
         <h1>Business areas</h1>
         <div
           style={{
@@ -71,7 +71,7 @@ function App() {
           />
         </div>
         <img src={PilNer} className="pil" alt="pilned" />
-      </div>
+      </div> */}
       <div className="card">
         <h1>Get in touch</h1>
         <p>
