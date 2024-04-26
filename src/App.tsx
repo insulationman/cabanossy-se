@@ -6,6 +6,7 @@ import LinkedIn from "./assets/LinkedIn.svg";
 import PilUpp from "./assets/Pil-Upp.svg";
 import PilNer from "./assets/Pil-Ner.svg";
 import palette from "./assets/palette-solid.svg";
+import PieChart from "./assets/PieChart.svg";
 
 function App() {
   const imageRef = useRef<HTMLImageElement | null>(null);
@@ -43,6 +44,32 @@ function App() {
           Most businesses can use new and established technologies to grow and
           expand. We can help you with that.
         </p>
+        <img src={PilNer} className="pil" alt="pilned" />
+      </div>
+      <div className="card">
+        <h1>Business areas</h1>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            width: "100%",
+          }}
+        >
+          <p>
+            We work mainly in three business areas:
+            <ul>
+              <li>Common web development</li>
+              <li>customised business software</li>
+              <li>IT management and consulting</li>
+            </ul>
+          </p>
+          <img
+            src={PieChart}
+            alt="piechart"
+            height={150}
+            style={{ paddingRight: 20 }}
+          />
+        </div>
         <img src={PilNer} className="pil" alt="pilned" />
       </div>
       <div className="card">
