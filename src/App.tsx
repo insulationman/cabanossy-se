@@ -43,8 +43,9 @@ function App() {
         <Card title="Business areas">
           <div className="flex flex-col md:flex-row  gap-3">
             <p className="order-2 md:order-first">
-              We do work in three business areas: "classic" web development,
-              customised business software and IT management/consulting.
+              We do work in three business areas: "classic" public facing web
+              development, customised business software and IT
+              management/consulting.
             </p>
             <img
               src={PieChart}
