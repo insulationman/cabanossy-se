@@ -90,11 +90,20 @@ function App() {
               </a>
             </li>
           </ul>
-          <img src={PilUpp} className="h-2 mt-auto self-end" alt="pilned" />
+          <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
+        </Card>
+        <Card title="From design to site">
+          <p>
+            In our work with marketing agency <strong>2028</strong>, this means
+            we take a design and turn it into a site while collaborating
+            closely.
+          </p>
+          <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
         </Card>
         <Card title="Custom software">
           <p>
-            Sometimes you need a customised solution. Here's an example of that:
+            Sometimes you need a customised solution. Cabanossy has developed
+            this:
           </p>
           <a
             href="https://isol.se"
@@ -104,8 +113,17 @@ function App() {
           >
             isol.se
           </a>
-          <img src={PilUpp} className="h-2 mt-auto self-end" alt="pilned" />
+          <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
         </Card>
+        <Card title="And even more customized">
+          <p>
+            Gothenburg based IT-Trans configures, stores and delivers printing
+            soultions. We build a custom delivery and order management software
+            for them. Contact us to learn more.
+          </p>
+          <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
+        </Card>
+
         <Card title="Get in touch">
           <p>
             Do you want to know more? Get in touch – we will get back to you as
