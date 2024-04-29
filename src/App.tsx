@@ -72,12 +72,12 @@ function App() {
             </li>
             <li>
               <a
-                href="https://pb2b.agency"
+                href="https://supai.se/curryketchup/"
                 target="_blank"
                 rel="noreferrer"
                 className="underline"
               >
-                PB2B Agency
+                Supai kitchen
               </a>
             </li>
             <li>
