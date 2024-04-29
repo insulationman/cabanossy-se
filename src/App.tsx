@@ -139,7 +139,9 @@ function App() {
             </p>
             <img src={PilUpp} className="h-2 mt-auto self-end" alt="pilned" />
           </Card>
-          <img src={Logos} alt="logos" className="w-full p-5 sticky top-96" />
+          <Card title="Selected clients">
+            <img src={Logos} alt="logos" className="w-full my-auto" />
+          </Card>
           <div className="h-[800px]"></div>
         </div>
         <Footer />
