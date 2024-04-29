@@ -6,7 +6,6 @@ import LinkedIn from "./assets/LinkedIn.svg";
 import PilUpp from "./assets/Pil-Upp.svg";
 import PilNer from "./assets/Pil-Ner.svg";
 import palette from "./assets/palette-solid.svg";
-import PieChart from "./assets/PieChart.svg";
 import Card from "./Card";
 
 function App() {
@@ -52,10 +51,10 @@ function App() {
         </p>
         <img src={PilUpp} className="h-2 mt-auto self-end" alt="pilned" />
       </Card>
-      <div className="flex align-items-center px-4 pb-4 text-sm">
+      <div className="flex align-items-center px-4 pb-4 text-sm gap-1">
         <span className="">© {new Date().getFullYear()} Cabanossy</span>
         <div
-          className="color-picker"
+          className="w-5 ml-auto"
           onClick={() => {
             //set theme css var to red
             const hue = ThemeHues[(ThemeHues.indexOf(themeHue) + 1) % 4];
@@ -70,15 +69,12 @@ function App() {
         </div>
         <a
           href="mailto:info@cabanossy.se?subject=Contact"
-          className="contact-link"
+          className="w-5"
           onClick={() => {}}
         >
           <img src={Email} alt="email" />
         </a>
-        <a
-          href="https://www.linkedin.com/company/cabanossy"
-          className="contact-link"
-        >
+        <a href="https://www.linkedin.com/company/cabanossy" className="w-5">
           <img src={LinkedIn} alt="linkedin" />
         </a>
       </div>
