@@ -2,6 +2,7 @@ import Logo from "./assets/Cabanossy-Snurra_Rityta 1.svg";
 import { useEffect, useRef } from "react";
 import PilUpp from "./assets/Pil-Upp.svg";
 import PilNer from "./assets/Pil-Ner.svg";
+import PieChart from "./assets/PieChart.svg";
 import Card from "./Card";
 import Footer from "./Footer";
 
@@ -38,6 +39,15 @@ function App() {
             expand. We can help you with that.
           </p>
           <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
+        </Card>
+        <Card title="Business areas">
+          <div className="flex flex-col md:flex-row items-center gap-3">
+            <img src={PieChart} className="h-24 md:h-32 self-center" />
+            <p>
+              We do work in three business areas: "classic" web development,
+              customised business software and IT management/consulting.
+            </p>
+          </div>
         </Card>
         <Card title="Get in touch">
           <p>
