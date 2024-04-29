@@ -26,59 +26,61 @@ function App() {
   const ThemeHues = [55, 0, 90, 180, 270];
 
   return (
-    <>
-      <div className="sticky h-[14rem] flex justify-center items-center sticky top-0">
-        <img src={Logo} className="h-32" alt="logo" ref={imageRef} />
-      </div>
-      <Card title="A passion for web and coding">
-        <p>
-          At Cabanossy we are passionate – about web development and code in
-          particular. Let’s create amazing websites and applications together.
-        </p>
-        <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
-      </Card>
-      <Card title="Grow with IT">
-        <p>
-          Most businesses can use new and established technologies to grow and
-          expand. We can help you with that.
-        </p>
-        <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
-      </Card>
-      <Card title="Get in touch">
-        <p>
-          Do you want to know more? Get in touch – we will get back to you as
-          soon as possible.
-        </p>
-        <img src={PilUpp} className="h-2 mt-auto self-end" alt="pilned" />
-      </Card>
-      <div className="flex align-items-center px-6 pb-4 text-sm gap-1">
-        <span className="">© {new Date().getFullYear()} Cabanossy</span>
-        <div
-          className="w-5 ml-auto"
-          onClick={() => {
-            //set theme css var to red
-            const hue = ThemeHues[(ThemeHues.indexOf(themeHue) + 1) % 4];
-            setThemeHue(hue);
-            document.documentElement.style.setProperty(
-              "--theme-hue",
-              hue.toString()
-            );
-          }}
-        >
-          <img src={palette} alt="palette" />
+    <div className="flex justify-center">
+      <div className="max-w-[700px]">
+        <div className="sticky h-[14rem] flex justify-center items-center sticky top-0">
+          <img src={Logo} className="h-32" alt="logo" ref={imageRef} />
         </div>
-        <a
-          href="mailto:info@cabanossy.se?subject=Contact"
-          className="w-5"
-          onClick={() => {}}
-        >
-          <img src={Email} alt="email" />
-        </a>
-        <a href="https://www.linkedin.com/company/cabanossy" className="w-5">
-          <img src={LinkedIn} alt="linkedin" />
-        </a>
+        <Card title="A passion for web and coding">
+          <p>
+            At Cabanossy we are passionate – about web development and code in
+            particular. Let’s create amazing websites and applications together.
+          </p>
+          <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
+        </Card>
+        <Card title="Grow with IT">
+          <p>
+            Most businesses can use new and established technologies to grow and
+            expand. We can help you with that.
+          </p>
+          <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
+        </Card>
+        <Card title="Get in touch">
+          <p>
+            Do you want to know more? Get in touch – we will get back to you as
+            soon as possible.
+          </p>
+          <img src={PilUpp} className="h-2 mt-auto self-end" alt="pilned" />
+        </Card>
+        <div className="flex align-items-center px-6 pb-4 text-sm gap-1">
+          <span className="">© {new Date().getFullYear()} Cabanossy</span>
+          <div
+            className="w-5 ml-auto"
+            onClick={() => {
+              //set theme css var to red
+              const hue = ThemeHues[(ThemeHues.indexOf(themeHue) + 1) % 4];
+              setThemeHue(hue);
+              document.documentElement.style.setProperty(
+                "--theme-hue",
+                hue.toString()
+              );
+            }}
+          >
+            <img src={palette} alt="palette" />
+          </div>
+          <a
+            href="mailto:info@cabanossy.se?subject=Contact"
+            className="w-5"
+            onClick={() => {}}
+          >
+            <img src={Email} alt="email" />
+          </a>
+          <a href="https://www.linkedin.com/company/cabanossy" className="w-5">
+            <img src={LinkedIn} alt="linkedin" />
+          </a>
+        </div>
       </div>
-    </>
+    </div>
   );
 }
 
