@@ -41,13 +41,92 @@ function App() {
           <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
         </Card>
         <Card title="Business areas">
-          <div className="flex flex-col md:flex-row items-center gap-3">
-            <img src={PieChart} className="h-24 md:h-32 self-center" />
-            <p>
+          <div className="flex flex-col md:flex-row  gap-3">
+            <p className="order-2 md:order-first">
               We do work in three business areas: "classic" web development,
               customised business software and IT management/consulting.
             </p>
+            <img
+              src={PieChart}
+              className="h-24 md:h-32 md:mx-4 md:order-last self-center"
+            />
           </div>
+          <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
+        </Card>
+        <Card title="Web development">
+          <p>
+            We often work with designers to create responsive sites for
+            end-customers. Here are some examples:
+          </p>
+          <ul className="list-disc list-inside">
+            <li>
+              <a
+                href="https://viab.se"
+                target="_blank"
+                rel="noreferrer"
+                className="underline"
+              >
+                Vätterledens Invest
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://pb2b.agency"
+                target="_blank"
+                rel="noreferrer"
+                className="underline"
+              >
+                PB2B Agency
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://vhab.se"
+                target="_blank"
+                rel="noreferrer"
+                className="underline"
+              >
+                VHAB
+              </a>
+            </li>
+          </ul>
+          <img src={PilUpp} className="h-2 mt-auto self-end" alt="pilned" />
+        </Card>
+        <Card title="Custom software">
+          <p>Sometimes you need a customised solution.</p>
+          <ul className="list-disc list-inside">
+            <li>
+              <a
+                href="https://viab.se"
+                target="_blank"
+                rel="noreferrer"
+                className="underline"
+              >
+                Vätterledens Invest
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://pb2b.agency"
+                target="_blank"
+                rel="noreferrer"
+                className="underline"
+              >
+                PB2B Agency
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://vhab.se"
+                target="_blank"
+                rel="noreferrer"
+                className="underline"
+              >
+                VHAB
+              </a>
+            </li>
+          </ul>
+          <img src={PilUpp} className="h-2 mt-auto self-end" alt="pilned" />
         </Card>
         <Card title="Get in touch">
           <p>
