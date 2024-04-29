@@ -52,8 +52,8 @@ function App() {
         </p>
         <img src={PilUpp} className="h-2 mt-auto self-end" alt="pilned" />
       </Card>
-      <div className="footer">
-        <span>© {new Date().getFullYear()} Cabanossy</span>
+      <div className="flex align-items-center px-4 pb-4 text-sm">
+        <span className="">© {new Date().getFullYear()} Cabanossy</span>
         <div
           className="color-picker"
           onClick={() => {

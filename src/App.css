@@ -18,12 +18,6 @@
   overflow: hidden;
 }
 
-.footer {
-  display: flex;
-  align-items: center;
-  padding: 1rem 1rem;
-  font-size: 0.7rem;
-}
 .contact-link {
   width: 30px;
   padding: 5px;
