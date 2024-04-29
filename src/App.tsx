@@ -120,9 +120,9 @@ function App() {
           </Card>
           <Card title="Custom software">
             <p>
-              Collaboration is also key you need a customised solution. This
-              solution was made by working closely with users, and the result is
-              a successful project:
+              Collaboration is also key when you need a customised solution.
+              This solution was made by working closely with users, and the
+              result is a successful project:
             </p>
             <a
               href="https://isol.se"
