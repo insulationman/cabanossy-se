@@ -24,7 +24,7 @@ function App() {
     <div className="flex justify-center">
       <div className="max-w-[700px]">
         <div className="sticky h-[10rem] md:h-[14rem]  flex justify-center items-center sticky top-0">
-          <img src={Logo} className="h-20 md:h-32" alt="logo" ref={imageRef} />
+          <img src={Logo} className="h-24 md:h-32" alt="logo" ref={imageRef} />
         </div>
         <Card title="A passion for web and coding">
           <p>
