@@ -27,8 +27,8 @@ function App() {
 
   return (
     <>
-      <div className="logo-container">
-        <img src={Logo} className="logo" alt="logo" ref={imageRef} />
+      <div className="sticky h-[14rem] flex justify-center items-center sticky top-0">
+        <img src={Logo} className="h-32" alt="logo" ref={imageRef} />
       </div>
       <Card title="A passion for web and coding">
         <p>
@@ -51,7 +51,7 @@ function App() {
         </p>
         <img src={PilUpp} className="h-2 mt-auto self-end" alt="pilned" />
       </Card>
-      <div className="flex align-items-center px-4 pb-4 text-sm gap-1">
+      <div className="flex align-items-center px-6 pb-4 text-sm gap-1">
         <span className="">© {new Date().getFullYear()} Cabanossy</span>
         <div
           className="w-5 ml-auto"
