@@ -4,8 +4,5 @@
 
 :root {
   font-size: larger;
-
-  --theme-hue: 55;
-  background-color: hsl(var(--theme-hue), 61.58%, 65.29%);
   /* filter: brightness(50); */
 }

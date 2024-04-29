@@ -9,11 +9,12 @@ import Logos from "./assets/logos.png";
 
 function App() {
   const imageRef = useRef<HTMLImageElement | null>(null);
+  const scrollContainerRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    scrollContainerRef.current?.addEventListener("scroll", () => {
       requestAnimationFrame(() => {
-        const rotation = (window.scrollY / 1) % 360;
+        const rotation = (scrollContainerRef.current?.scrollTop || 0) / 2;
         if (imageRef.current != undefined) {
           imageRef.current.style.transform = `rotate(${rotation}deg)`;
         }
@@ -22,12 +23,22 @@ function App() {
   }, []);
 
   return (
-    <div className="flex   h-[100dvh] justify-center">
+    <div className="flex h-[100dvh] justify-center bg-amber-200">
       <div className="max-w-[700px] h-full flex justify-center flex-col">
-        <div className="sticky h-[8rem] md:h-[14rem]  p-4 flex justify-center items-center sticky top-0">
-          <img src={Logo} className="h-24 md:h-32" alt="logo" ref={imageRef} />
+        <div className="sticky h-[8rem] md:h-[14rem]  p-4 flex justify-center items-center top-0">
+          <img
+            src={Logo}
+            className="h-24 md:h-32 "
+            alt="logo"
+            ref={imageRef}
+            style={{ filter: "drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));" }}
+          />
         </div>
-        <div className="grow overflow-scroll pb-auto">
+        <div
+          className="grow overflow-scroll pb-auto"
+          ref={scrollContainerRef}
+          onScroll={() => console.log("scroll")}
+        >
           <Card title="A passion for web and coding">
             <p>
               At Cabanossy we are passionate – about web development and code in
@@ -43,15 +54,15 @@ function App() {
           <Card title="Grow with IT">
             <p>
               Most businesses can use new and established technologies to grow
-              and expand. We can help you with that.
+              and expand, or just to use less energy at work. We can help you
+              with that.
             </p>
             <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
           </Card>
-
           <Card title="Business areas">
             <div className="flex flex-col md:flex-row  gap-3">
               <p className="order-2 md:order-first">
-                We do work in three business areas: "classic" public facing web
+                We do work in three business areas: classic public facing web
                 development, customised business software and IT
                 management/consulting.
               </p>
@@ -131,7 +142,18 @@ function App() {
             </p>
             <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
           </Card>
-
+          <Card title="Selected tools">
+            <p>
+              All this is made possible by using the right tools, some of the
+              most common being:
+              <strong>
+                {" "}
+                .NET, React, TypeScript, PostgreSQL, Docker, GitHub Actions,
+                Azure and of course WordPress.
+              </strong>
+            </p>
+            <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
+          </Card>
           <Card title="Get in touch">
             <p>
               Do you want to know more? Get in touch – we will get back to you
