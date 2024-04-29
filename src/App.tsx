@@ -42,8 +42,7 @@ function App() {
           <Card title="A passion for web and coding">
             <p>
               At Cabanossy we are passionate – about web development and code in
-              particular. Let’s create amazing websites and applications
-              together.
+              particular. We believe that the web is a great place to be.
             </p>
             <img
               src={PilNer}
@@ -53,9 +52,8 @@ function App() {
           </Card>
           <Card title="Grow with IT">
             <p>
-              Most businesses can use new and established technologies to grow
-              and expand, or just to use less energy at work. We can help you
-              with that.
+              This knowledge about new and established technologies helps our
+              customers achieve their goals.
             </p>
             <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
           </Card>
@@ -122,7 +120,9 @@ function App() {
           </Card>
           <Card title="Custom software">
             <p>
-              Sometimes you need a customised solution. We have developed this:
+              Collaboration is also key you need a customised solution. This
+              solution was made by working closely with users, and the result is
+              a successful project:
             </p>
             <a
               href="https://isol.se"
@@ -134,11 +134,11 @@ function App() {
             </a>
             <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
           </Card>
-          <Card title="And even more customized">
+          <Card title="Even more customized">
             <p>
-              Gothenburg based IT-Trans configures, stores and delivers printing
-              soultions. We build a custom delivery and order management
-              software for them. Contact us to learn more.
+              The Gothenburg based IT-Trans configures needed tools for, storing
+              and delivering printing soultions. They now use a custom delivery
+              and order management software. Contact us to learn more.
             </p>
             <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
           </Card>
@@ -151,6 +151,14 @@ function App() {
                 .NET, React, TypeScript, PostgreSQL, Docker, GitHub Actions,
                 Azure and of course WordPress.
               </strong>
+            </p>
+            <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
+          </Card>
+          <Card title="Just humans">
+            <p>
+              All this digital development is usually done in the context of an
+              organisation. We help our customers make the right decisions
+              within that context.
             </p>
             <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
           </Card>
