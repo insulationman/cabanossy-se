@@ -103,8 +103,7 @@ function App() {
         </Card>
         <Card title="Custom software">
           <p>
-            Sometimes you need a customised solution. Cabanossy has developed
-            this:
+            Sometimes you need a customised solution. We have developed this:
           </p>
           <a
             href="https://isol.se"
