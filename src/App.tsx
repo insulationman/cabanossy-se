@@ -5,6 +5,7 @@ import PilNer from "./assets/Pil-Ner.svg";
 import PieChart from "./assets/PieChart.svg";
 import Card from "./Card";
 import Footer from "./Footer";
+import Logos from "./assets/logos.png";
 
 function App() {
   const imageRef = useRef<HTMLImageElement | null>(null);
@@ -138,6 +139,7 @@ function App() {
             </p>
             <img src={PilUpp} className="h-2 mt-auto self-end" alt="pilned" />
           </Card>
+          <img src={Logos} alt="logos" className="w-full p-5 sticky top-96" />
           <div className="h-[800px]"></div>
         </div>
         <Footer />
