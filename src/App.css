@@ -18,23 +18,6 @@
   overflow: hidden;
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  min-height: 16rem;
-  align-items: start;
-  padding: 1rem 2rem;
-  margin: 0 1rem;
-  margin-bottom: 2rem;
-  border-radius: 0.2rem;
-  box-shadow: 0 0 0.5em #00000022;
-  background-color: #f8f8f8;
-  transition: transform 300ms;
-  position: sticky;
-  top: 14rem;
-  background-color: hsl(var(--theme-hue), 90.91%, 74.12%);
-}
-
 .footer {
   display: flex;
   align-items: center;
@@ -50,22 +33,4 @@
   width: 30px;
   padding: 5px;
   margin-left: auto;
-}
-
-.pil {
-  width: 15px;
-  padding: 5px;
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
-}
-
-@media only screen and (max-width: 600px) {
-  .card {
-    top: 10rem;
-  }
-  .logo-container {
-    height: 10rem;
-    padding: 1.5rem;
-  }
 }
