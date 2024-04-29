@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="flex h-[100dvh] justify-center bg-amber-200">
       <div className="max-w-[700px] h-full flex justify-center flex-col">
-        <div className="sticky h-[8rem] md:h-[14rem]  p-4 flex justify-center items-center top-0">
+        <div className=" h-[8rem] md:h-64 p-6 flex justify-center items-center top-0 shrink-0">
           <img
             src={Logo}
             className="h-24 md:h-32 "
