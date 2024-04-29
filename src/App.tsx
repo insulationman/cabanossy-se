@@ -93,39 +93,17 @@ function App() {
           <img src={PilUpp} className="h-2 mt-auto self-end" alt="pilned" />
         </Card>
         <Card title="Custom software">
-          <p>Sometimes you need a customised solution.</p>
-          <ul className="list-disc list-inside">
-            <li>
-              <a
-                href="https://viab.se"
-                target="_blank"
-                rel="noreferrer"
-                className="underline"
-              >
-                Vätterledens Invest
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://pb2b.agency"
-                target="_blank"
-                rel="noreferrer"
-                className="underline"
-              >
-                PB2B Agency
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://vhab.se"
-                target="_blank"
-                rel="noreferrer"
-                className="underline"
-              >
-                VHAB
-              </a>
-            </li>
-          </ul>
+          <p>
+            Sometimes you need a customised solution. Here's an example of that:
+          </p>
+          <a
+            href="https://isol.se"
+            target="_blank"
+            rel="noreferrer"
+            className="underline"
+          >
+            isol.se
+          </a>
           <img src={PilUpp} className="h-2 mt-auto self-end" alt="pilned" />
         </Card>
         <Card title="Get in touch">
