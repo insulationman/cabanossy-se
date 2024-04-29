@@ -1,16 +1,12 @@
 import Logo from "./assets/Cabanossy-Snurra_Rityta 1.svg";
-import "./App.css";
-import { useEffect, useRef, useState } from "react";
-import Email from "./assets/Email.svg";
-import LinkedIn from "./assets/LinkedIn.svg";
+import { useEffect, useRef } from "react";
 import PilUpp from "./assets/Pil-Upp.svg";
 import PilNer from "./assets/Pil-Ner.svg";
-import palette from "./assets/palette-solid.svg";
 import Card from "./Card";
+import Footer from "./Footer";
 
 function App() {
   const imageRef = useRef<HTMLImageElement | null>(null);
-  const [themeHue, setThemeHue] = useState(0);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -22,8 +18,6 @@ function App() {
       });
     });
   }, []);
-
-  const ThemeHues = [55, 0, 90, 180, 270];
 
   return (
     <div className="flex justify-center">
@@ -52,33 +46,7 @@ function App() {
           </p>
           <img src={PilUpp} className="h-2 mt-auto self-end" alt="pilned" />
         </Card>
-        <div className="flex align-items-center px-6 pb-4 text-sm gap-1">
-          <span className="">© {new Date().getFullYear()} Cabanossy</span>
-          <div
-            className="w-5 ml-auto"
-            onClick={() => {
-              //set theme css var to red
-              const hue = ThemeHues[(ThemeHues.indexOf(themeHue) + 1) % 4];
-              setThemeHue(hue);
-              document.documentElement.style.setProperty(
-                "--theme-hue",
-                hue.toString()
-              );
-            }}
-          >
-            <img src={palette} alt="palette" />
-          </div>
-          <a
-            href="mailto:info@cabanossy.se?subject=Contact"
-            className="w-5"
-            onClick={() => {}}
-          >
-            <img src={Email} alt="email" />
-          </a>
-          <a href="https://www.linkedin.com/company/cabanossy" className="w-5">
-            <img src={LinkedIn} alt="linkedin" />
-          </a>
-        </div>
+        <Footer />
       </div>
     </div>
   );
