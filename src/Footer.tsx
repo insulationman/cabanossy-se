@@ -9,7 +9,7 @@ const Footer = () => {
   const [themeHue, setThemeHue] = useState(0);
 
   return (
-    <div className="flex align-items-center px-6 pb-4 text-sm gap-1">
+    <div className="flex align-items-center px-6 pb-4 text-sm gap-1 sticky top-96">
       <span className="">© {new Date().getFullYear()} Cabanossy</span>
       <div
         className="w-5 ml-auto"

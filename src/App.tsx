@@ -142,9 +142,9 @@ function App() {
           <Card title="Selected clients">
             <img src={Logos} alt="logos" className="w-full my-auto" />
           </Card>
+          <Footer />
           <div className="h-[800px]"></div>
         </div>
-        <Footer />
       </div>
     </div>
   );
