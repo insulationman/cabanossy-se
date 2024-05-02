@@ -155,9 +155,9 @@ function App() {
           </Card>
           <Card title="Even more customized" colorName={colorNameCard}>
             <p>
-              The Gothenburg based IT-Trans configures needed tools for, storing
-              and delivering printing soultions. They now use a custom delivery
-              and order management software. Contact us to learn more.
+              The Gothenburg based company IT-Trans needed tools for storing and
+              delivering printing soultions. They now use a custom delivery and
+              order management software. Contact us to learn more.
             </p>
             <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
           </Card>
