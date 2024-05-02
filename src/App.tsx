@@ -1,5 +1,5 @@
 import Logo from "./assets/Cabanossy-Snurra_Rityta 1.svg";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import PilUpp from "./assets/Pil-Upp.svg";
 import PilNer from "./assets/Pil-Ner.svg";
 import PieChart from "./assets/PieChart.svg";
@@ -10,6 +10,12 @@ import Logos from "./assets/logos.png";
 function App() {
   const imageRef = useRef<HTMLImageElement | null>(null);
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
+  const [colorNameBG, setColorNameBG] = useState("bg-amber-200");
+  const [colorNameCard, setColorNameCard] = useState("bg-yellow-200");
+
+  const BGColorNames = ["bg-amber-200", "bg-blue-200"];
+
+  const CardColorNames = ["bg-yellow-200", "bg-cyan-100"];
 
   useEffect(() => {
     scrollContainerRef.current?.addEventListener("scroll", () => {
@@ -22,8 +28,21 @@ function App() {
     });
   }, []);
 
+  const handleColorChange = () => {
+    // //set the color of the background to the next color in the array
+    const nextBGColorIndex = BGColorNames.indexOf(colorNameBG) + 1;
+    const nextBGColor = BGColorNames[nextBGColorIndex % BGColorNames.length];
+    setColorNameBG(nextBGColor);
+    //and the color of the cards
+    const nextCardColorIndex = CardColorNames.indexOf(colorNameCard) + 1;
+    const nextCardColor =
+      CardColorNames[nextCardColorIndex % CardColorNames.length];
+    setColorNameCard(nextCardColor);
+    // setColorNameBG("blue");
+  };
+
   return (
-    <div className="flex h-[100dvh] justify-center bg-amber-200">
+    <div className={`flex h-[100dvh] justify-center ${colorNameBG}`}>
       <div className="max-w-[700px] h-full flex justify-center flex-col">
         <div className=" h-[8rem] md:h-64 p-6 flex justify-center items-center top-0 shrink-0">
           <img
@@ -39,7 +58,7 @@ function App() {
           ref={scrollContainerRef}
           onScroll={() => console.log("scroll")}
         >
-          <Card title="A passion for web and coding">
+          <Card title="A passion for web and coding" colorName={colorNameCard}>
             <p>
               At Cabanossy we are passionate – about web development and code in
               particular. We believe that the web is a great place to be.
@@ -50,14 +69,14 @@ function App() {
               alt="pilned"
             />
           </Card>
-          <Card title="Grow with IT">
+          <Card title="Grow with IT" colorName={colorNameCard}>
             <p>
               This knowledge about new and established technologies helps our
               customers achieve their goals.
             </p>
             <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
           </Card>
-          <Card title="Business areas">
+          <Card title="Business areas" colorName={colorNameCard}>
             <div className="flex flex-col md:flex-row  gap-3">
               <p className="order-2 md:order-first">
                 We do work in three business areas: classic public facing web
@@ -71,7 +90,7 @@ function App() {
             </div>
             <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
           </Card>
-          <Card title="Web development">
+          <Card title="Web development" colorName={colorNameCard}>
             <p>
               We often work with designers to create responsive sites for
               end-customers. Here are some examples:
@@ -110,7 +129,7 @@ function App() {
             </ul>
             <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
           </Card>
-          <Card title="From design to site">
+          <Card title="From design to site" colorName={colorNameCard}>
             <p>
               In our work with marketing agency <strong>2028</strong>, this
               means we take a design and turn it into a site while collaborating
@@ -118,7 +137,7 @@ function App() {
             </p>
             <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
           </Card>
-          <Card title="Custom software">
+          <Card title="Custom software" colorName={colorNameCard}>
             <p>
               Collaboration is also key when you need a customised solution.
               This solution was made by working closely with users, and the
@@ -134,7 +153,7 @@ function App() {
             </a>
             <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
           </Card>
-          <Card title="Even more customized">
+          <Card title="Even more customized" colorName={colorNameCard}>
             <p>
               The Gothenburg based IT-Trans configures needed tools for, storing
               and delivering printing soultions. They now use a custom delivery
@@ -142,7 +161,7 @@ function App() {
             </p>
             <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
           </Card>
-          <Card title="Selected tools">
+          <Card title="Selected tools" colorName={colorNameCard}>
             <p>
               All this is made possible by using the right tools, some of the
               most common being:
@@ -154,7 +173,7 @@ function App() {
             </p>
             <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
           </Card>
-          <Card title="Just humans">
+          <Card title="Just humans" colorName={colorNameCard}>
             <p>
               All this digital development is usually done in the context of an
               organisation. We help our customers make the right decisions
@@ -162,17 +181,17 @@ function App() {
             </p>
             <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
           </Card>
-          <Card title="Get in touch">
+          <Card title="Get in touch" colorName={colorNameCard}>
             <p>
               Do you want to know more? Get in touch – we will get back to you
               as soon as possible.
             </p>
             <img src={PilUpp} className="h-2 mt-auto self-end" alt="pilned" />
           </Card>
-          <Card title="Selected clients">
+          <Card title="Selected clients" colorName={colorNameCard}>
             <img src={Logos} alt="logos" className="w-full my-auto" />
           </Card>
-          <Footer />
+          <Footer onColorChange={handleColorChange} />
           <div className="h-[800px]"></div>
         </div>
       </div>

@@ -1,28 +1,17 @@
-import { useState } from "react";
 import Email from "./assets/Email.svg";
 import LinkedIn from "./assets/LinkedIn.svg";
 
 import palette from "./assets/palette-solid.svg";
 
-const Footer = () => {
-  const ThemeHues = [55, 0, 90, 180, 270];
-  const [themeHue, setThemeHue] = useState(0);
+interface FooterProps {
+  onColorChange: () => void;
+}
 
+const Footer = (props: FooterProps) => {
   return (
     <div className="flex align-items-center px-6 pb-4 text-sm gap-1 sticky top-[22rem]">
       <span className="">© {new Date().getFullYear()} Cabanossy</span>
-      <div
-        className="w-5 ml-auto"
-        onClick={() => {
-          //set theme css var to red
-          const hue = ThemeHues[(ThemeHues.indexOf(themeHue) + 1) % 4];
-          setThemeHue(hue);
-          document.documentElement.style.setProperty(
-            "--theme-hue",
-            hue.toString()
-          );
-        }}
-      >
+      <div className="w-5 ml-auto" onClick={props.onColorChange}>
         <img src={palette} alt="palette" />
       </div>
       <a

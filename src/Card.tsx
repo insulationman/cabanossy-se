@@ -2,11 +2,12 @@ import React from "react";
 
 interface CardProps {
   title: string;
+  colorName: string;
   children: React.ReactNode;
 }
 
 const Card = (props: CardProps) => {
-  const { title, children } = props;
+  const { title, children, colorName } = props;
   //ref for the current card
   const cardRef = React.useRef<HTMLDivElement>(null);
 
@@ -30,10 +31,9 @@ const Card = (props: CardProps) => {
 
   return (
     <div
-      className="flex flex-col mb-5 mx-4 px-6 py-4 bg-yellow-200 shadow-xl sticky top-[-1px] min-h-80 "
+      className={`flex flex-col mb-5 mx-4 px-6 py-4 ${colorName} shadow-xl sticky top-[-1px] min-h-80`}
       ref={cardRef}
     >
-      {cardRef.current?.offsetTop}
       {title && <h1 className="text-3xl font-extrabold mt-2 mb-3">{title}</h1>}
       {children}
     </div>
