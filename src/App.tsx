@@ -1,4 +1,4 @@
-import Logo from "./assets/Cabanossy-Snurra_Rityta 1.svg";
+import Logo from "./assets/Cabanossy-Snurra_nobg.svg";
 import { useEffect, useRef, useState } from "react";
 import PilUpp from "./assets/Pil-Upp.svg";
 import PilNer from "./assets/Pil-Ner.svg";
@@ -47,7 +47,7 @@ function App() {
         <div className=" h-[8rem] md:h-64 p-6 flex justify-center items-center top-0 shrink-0">
           <img
             src={Logo}
-            className="h-24 md:h-32 "
+            className={"h-24 md:h-32 rounded-full" + " " + colorNameCard}
             alt="logo"
             ref={imageRef}
             style={{ filter: "drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));" }}
