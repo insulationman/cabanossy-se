@@ -10,8 +10,8 @@ import Logos from "./assets/logos.png";
 function App() {
   const imageRef = useRef<HTMLImageElement | null>(null);
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
-  const [colorNameBG, setColorNameBG] = useState("bg-amber-200");
-  const [colorNameCard, setColorNameCard] = useState("bg-yellow-200");
+  const [colorNameBG, setColorNameBG] = useState("bg-blue-200");
+  const [colorNameCard, setColorNameCard] = useState("bg-cyan-100");
 
   const BGColorNames = ["bg-amber-200", "bg-blue-200"];
 
