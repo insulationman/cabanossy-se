@@ -76,7 +76,7 @@ function App() {
             </p>
             <img src={PilNer} className="h-2 mt-auto self-end" alt="pilned" />
           </Card>
-          <Card title="Business areas" colorName={colorNameCard}>
+          <Card title="What we do" colorName={colorNameCard}>
             <div className="flex flex-col md:flex-row  gap-3">
               <p className="order-2 md:order-first">
                 We do work in three business areas: classic public facing web
