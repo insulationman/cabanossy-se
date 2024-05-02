@@ -31,7 +31,7 @@ const Card = (props: CardProps) => {
 
   return (
     <div
-      className={`flex flex-col mb-5 mx-4 px-6 py-4 ${colorName} shadow-xl sticky top-[-1px] min-h-80`}
+      className={`flex flex-col mb-5 mx-4 px-6 py-4 ${colorName} shadow-xl sticky top-[-1px] min-h-80 max-w-[700px]`}
       ref={cardRef}
     >
       {title && <h1 className="text-3xl font-extrabold mt-2 mb-3">{title}</h1>}

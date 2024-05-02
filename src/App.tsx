@@ -42,8 +42,8 @@ function App() {
   };
 
   return (
-    <div className={`flex h-[100dvh] justify-center ${colorNameBG}`}>
-      <div className="max-w-[700px] h-full flex justify-center flex-col">
+    <div className={`flex h-[100dvh] w-full justify-center ${colorNameBG}`}>
+      <div className=" h-full flex w-full justify-center flex-col">
         <div className=" h-[8rem] md:h-64 p-6 flex justify-center items-center top-0 shrink-0">
           <img
             src={Logo}
@@ -54,7 +54,7 @@ function App() {
           />
         </div>
         <div
-          className="grow overflow-scroll no-scrollbar pb-auto"
+          className="grow overflow-scroll no-scrollbar pb-auto flex items-center flex-col"
           ref={scrollContainerRef}
           onScroll={() => console.log("scroll")}
         >
@@ -192,7 +192,7 @@ function App() {
             <img src={Logos} alt="logos" className="w-full my-auto" />
           </Card>
           <Footer onColorChange={handleColorChange} />
-          <div className="h-[800px]"></div>
+          <div className="min-h-[700px]">:)</div>
         </div>
       </div>
     </div>
