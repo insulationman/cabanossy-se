@@ -35,7 +35,7 @@ function App() {
           />
         </div>
         <div
-          className="grow overflow-scroll pb-auto"
+          className="grow overflow-scroll no-scrollbar pb-auto"
           ref={scrollContainerRef}
           onScroll={() => console.log("scroll")}
         >
