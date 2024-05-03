@@ -4,6 +4,10 @@ import Card from "../components/BusinessAreaCard.astro";
 import Logo from "../assets/Cabanossy-Snurra_nobg.svg";
 import BusinessAreaCard from "../components/BusinessAreaCard.astro";
 import PortraitCard from "../components/PortraitCard.astro";
+import ShowcaseSiteItem from "../components/ShowcaseSiteItem.astro";
+import VätterledensInvest from "../assets/VätterledenInvest.png";
+import vhab from "../assets/VätterledenHolding.png";
+import supai from "../assets/Supai.png";
 ---
 
 <Layout title="Cabanossy - Web och mjukvara">
@@ -67,58 +71,33 @@ import PortraitCard from "../components/PortraitCard.astro";
     <div class="flex flex-col items-center pb-12 md:pb-40 gap-4 p-3 md:p-0">
       <PortraitCard />
     </div>
-    <div
-      class="flex flex-col items-center pb-48 gap-4 p-3 pb-12 md:p-0 md:pb-24"
-    >
+    <div class="flex flex-col items-center gap-4 p-3 pb-12 md:p-0 md:pb-24">
       <h1 class="text-2xl font-bold pb-6 text-center md:text-left">
         Vi presenterar några webbplatser:
       </h1>
       <div class="max-w-[1300px]">
         <div class="gap-4 grid grid-cols-1">
-          <div class="bg-white rounded-lg p-8 max-w-[1000px]">
-            <h1 class="text-2xl font-bold">Vätterledens Invest</h1>
-            <p class="mb-2">
-              Tillsammans med designers från marknadsbyrån{" "}
-              <strong>2028</strong> skapade vi en hemsida för Vätterledens Invest.
-              Vi är mycket nöjda med resultatet:
-            </p>
-            <a
-              class="bg-blue-200 p-1 px-3 rounded-lg"
-              target="_blank"
-              href="https://viab.se"
-            >
-              Besök hemsidan
-            </a>
-          </div>
-          <div class="bg-white rounded-lg p-8 max-w-[1000px]">
-            <h1 class="text-2xl font-bold">Supai Kitchen</h1>
-            <p class="mb-2">
-              Supai beskriver sig själva som en stark kraft i göteborgs matvärld
-              och vi är glada att ha fått möjligheten arbeta tillsammans.
-            </p>
-            <a
-              class="bg-blue-200 p-1 px-3 rounded-lg"
-              target="_blank"
-              href="https://supai.se/curryketchup/"
-            >
-              Kolla in deras curryketchup
-            </a>
-          </div>
-          <div class="bg-white rounded-lg p-8 max-w-[1000px]">
-            <h1 class="text-2xl font-bold">VHAB</h1>
-            <p class="mb-2">
-              VHAB förvaltar och investerar i bland annat företag och
-              fastigheter. Vi har tillsammans med webb-designers hjälpt dem att
-              skapa en hemsida som speglar deras verksamhet.
-            </p>
-            <a
-              class="bg-blue-200 p-1 px-3 rounded-lg"
-              target="_blank"
-              href="https://supai.se/curryketchup/"
-            >
-              Ta en titt
-            </a>
-          </div>
+          <ShowcaseSiteItem
+            title="Vätterledens Invest"
+            link="https://viab.se"
+            description="Tillsammans med designers från marknadsbyrån 2028 skapade vi en hemsida för Vätterledens Invest. Vi är mycket nöjda med resultatet:"
+            buttontext="Besök hemsidan"
+            imagesrc={VätterledensInvest.src}
+          />
+          <ShowcaseSiteItem
+            title="Supai Kitchen"
+            link="https://supai.se/curryketchup/"
+            description="Supai beskriver sig själva som en stark kraft i göteborgs matvärld och vi är glada att ha fått möjligheten arbeta tillsammans."
+            buttontext="Kolla in deras curryketchup"
+            imagesrc={supai.src}
+          />
+          <ShowcaseSiteItem
+            title="VHAB"
+            link="https://vhab.se"
+            description="VHAB förvaltar och investerar i bland annat företag och fastigheter. Vi har tillsammans med webb-designers hjälpt dem att skapa en hemsida som speglar deras verksamhet."
+            buttontext="Ta en titt"
+            imagesrc={vhab.src}
+          />
         </div>
       </div>
     </div>
