@@ -68,16 +68,16 @@ import supai from "../assets/Supai.png";
         </div>
       </div>
     </div>
-    <div class="flex flex-col items-center pb-12 md:pb-40 gap-4 p-3 md:p-0">
+    <div class="flex flex-col items-center pb-12 md:pb-32 gap-4 p-3 md:p-0">
       <PortraitCard />
     </div>
     <div
       class="flex flex-col items-center justify-left gap-4 p-2 pb-12 md:p-0 md:pb-24"
     >
-      <div class="lg:w-[1300px] shrink">
-        <h1 class="text-2xl font-bold pb-6 text-center md:text-left">
-          Några av våra senaste webbplatser:
-        </h1>
+      <div class="lg:w-[1300px] shrink flex flex-col items-center">
+        <h2 class="text-xl md:text-2xl pb-6 font-bold text-center md:text-left">
+          Några av våra senaste webbplatser
+        </h2>
         <div class="gap-2 md:gap-4 grid grid-cols-1 max-w-[1100px] shrink">
           <ShowcaseSiteItem
             title="Vätterledens Invest"
@@ -100,8 +100,27 @@ import supai from "../assets/Supai.png";
             buttontext="Ta en titt"
             imagesrc={vhab.src}
           />
+          <div class="flex flex-col items-center gap-4">
+            <a
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              href="mailto:info@cabanossy.se"
+            >
+              Kontakta oss för att samarbeta
+            </a>
+          </div>
         </div>
       </div>
     </div>
+    <!-- <div
+      class="flex flex-col items-center justify-left gap-4 p-2 pb-12 md:p-0 md:pb-24"
+    >
+      <div
+        class="lg:w-[1300px] shrink flex flex-col bg-white p-7 h-[500px] rounded-xl"
+      >
+        <h1 class="text-2xl md:text-4xl font-bold text md:text-left">
+          Affärssystem
+        </h1>
+      </div>
+    </div> -->
   </div>
 </Layout>
