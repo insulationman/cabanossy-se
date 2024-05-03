@@ -21,7 +21,7 @@ import supai from "../assets/Supai.png";
           class={"h-24 md:h-32 shrink rounded-full"}
           alt="logo"
         />
-        <div class="flex flex-col py-12 text-center gap-5">
+        <div class="flex flex-col py-6 md:py-12 text-center gap-5">
           <h1 class="text-3xl md:text-6xl font-bold">Web och mjukvara</h1>
           <p class="text-md md:text-xl max-w-[700px]">
             Vi brinner för webbutveckling och kod. För att webben är en
@@ -30,12 +30,12 @@ import supai from "../assets/Supai.png";
         </div>
       </div>
     </div>
-    <div class="flex flex-col items-center gap-8 py-12 md:pt-24">
+    <div class="flex flex-col items-center gap-8 py-12 md:py-12 md:pt-24">
       <div class="max-w-[1300px] p-3 md:p-0">
         <h1 class="text-2xl md:text-4xl font-bold text-center md:text-left">
           Våra affärsområden
         </h1>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 py-12">
           <BusinessAreaCard title="Klassisk webbutveckling">
             <p>
               Detta är antagligen vad du som reklambyrå eller företag är
@@ -71,12 +71,14 @@ import supai from "../assets/Supai.png";
     <div class="flex flex-col items-center pb-12 md:pb-40 gap-4 p-3 md:p-0">
       <PortraitCard />
     </div>
-    <div class="flex flex-col items-center gap-4 p-3 pb-12 md:p-0 md:pb-24">
-      <h1 class="text-2xl font-bold pb-6 text-center md:text-left">
-        Vi presenterar några webbplatser:
-      </h1>
-      <div class="max-w-[1300px]">
-        <div class="gap-4 grid grid-cols-1">
+    <div
+      class="flex flex-col items-center justify-left gap-4 p-3 pb-12 md:p-0 md:pb-24"
+    >
+      <div class="w-max-[1300px] shrink">
+        <h1 class="text-2xl font-bold pb-6 text-center md:text-left">
+          Vi presenterar några webbplatser:
+        </h1>
+        <div class="gap-2 md:gap-4 grid grid-cols-1 max-w-[1100px] shrink">
           <ShowcaseSiteItem
             title="Vätterledens Invest"
             link="https://viab.se"
