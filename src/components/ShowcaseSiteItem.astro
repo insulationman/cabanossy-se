@@ -4,15 +4,21 @@ interface Props {
   description: string;
   buttontext: string;
   link: string;
-  imagesrc: string;
+  image: ImageMetadata;
 }
+import { Image } from "astro:assets";
 
-const { title, description, buttontext, link, imagesrc } = Astro.props;
+const { title, description, buttontext, link, image } = Astro.props;
 ---
 
 <div class="bg-white rounded-lg p-8 md:items-center flex space-x-8">
   <div class="w-1/6">
-    <img src={imagesrc} class="rounded-lg pt-3 md:p-0" />
+    <Image
+      src={image}
+      class="rounded-lg pt-3 md:p-0"
+      width="100"
+      alt={title + " logo"}
+    />
   </div>
   <div class="w-5/6">
     <h1 class="text-2xl font-bold">
@@ -21,7 +27,7 @@ const { title, description, buttontext, link, imagesrc } = Astro.props;
     <p class="mb-2">
       {description}
     </p>
-    <a class="bg-blue-200 p-1 px-3 rounded-lg" target="_blank" href={link}>
+    <a class="bg-blue-200 p-1 px-3 rounded" target="_blank" href={link}>
       {buttontext}
     </a>
   </div>

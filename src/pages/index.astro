@@ -21,10 +21,9 @@ import { Image } from "astro:assets";
         <Image
           src={Logo}
           class={"h-24 md:h-32 shrink rounded-full"}
-          alt="logo"
+          alt="cabanossy logo"
           width={500}
           decoding="async"
-          loading="lazy"
         />
         <div class="flex flex-col py-6 md:py-12 text-center gap-5">
           <h1 class="text-3xl md:text-6xl font-bold">Web och mjukvara</h1>
@@ -83,27 +82,27 @@ import { Image } from "astro:assets";
         <h2 class="text-xl md:text-2xl pb-6 font-bold text-center md:text-left">
           Några av våra senaste webbplatser
         </h2>
-        <div class="gap-2 md:gap-4 grid grid-cols-1 max-w-[1100px] shrink">
+        <div class="gap-2 md:gap-2 grid grid-cols-1 max-w-[1100px] shrink">
           <ShowcaseSiteItem
             title="Vätterledens Invest"
             link="https://viab.se"
             description="Tillsammans med designers från marknadsbyrån 2028 skapade vi en hemsida för Vätterledens Invest. Vi är mycket nöjda med resultatet:"
             buttontext="Besök hemsidan"
-            imagesrc={VätterledensInvest.src}
+            image={VätterledensInvest}
           />
           <ShowcaseSiteItem
             title="Supai Kitchen"
             link="https://supai.se/curryketchup/"
             description="Supai beskriver sig själva som en stark kraft i göteborgs matvärld och vi är glada att ha fått möjligheten arbeta tillsammans."
             buttontext="Kolla in deras curryketchup"
-            imagesrc={supai.src}
+            image={supai}
           />
           <ShowcaseSiteItem
             title="VHAB"
             link="https://vhab.se"
             description="VHAB förvaltar och investerar i bland annat företag och fastigheter. Vi har tillsammans med webb-designers hjälpt dem att skapa en hemsida som speglar deras verksamhet."
             buttontext="Ta en titt"
-            imagesrc={vhab.src}
+            image={vhab}
           />
           <div class="flex flex-col items-center gap-4">
             <a
@@ -122,8 +121,8 @@ import { Image } from "astro:assets";
       <div
         class="lg:w-[1300px] shrink flex gap-4 justify-between p-7 rounded-xl"
       >
-        <div class="bg-white p-4 rounded-lg grow">
-          <h1 class="text-2xl md:text-4xl font-bold text md:text-left p-4">
+        <div class="bg-white p-8 rounded-lg grow">
+          <h1 class="text-2xl md:text-4xl font-bold text md:text-left mb-4">
             Affärsspecifik mjukvara
           </h1>
           <p>
