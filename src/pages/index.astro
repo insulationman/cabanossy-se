@@ -3,11 +3,13 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/BusinessAreaCard.astro";
 import Logo from "../assets/Cabanossy-Snurra_nobg.svg";
 import BusinessAreaCard from "../components/BusinessAreaCard.astro";
+import PortraitBridge from "../assets/bridge-portrait.jpg";
 import PortraitCard from "../components/PortraitCard.astro";
 import ShowcaseSiteItem from "../components/ShowcaseSiteItem.astro";
 import VätterledensInvest from "../assets/VätterledenInvest.png";
 import vhab from "../assets/VätterledenHolding.png";
 import supai from "../assets/Supai.png";
+import { Image } from "astro:assets";
 ---
 
 <Layout title="Cabanossy - Web och mjukvara">
@@ -16,10 +18,13 @@ import supai from "../assets/Supai.png";
       <div
         class="py-24 col-span-2 flex flex-col items-center p-3 md:p-16 bg-gradient-to-tr from-blue-50 to-blue-100"
       >
-        <img
-          src={Logo.src}
+        <Image
+          src={Logo}
           class={"h-24 md:h-32 shrink rounded-full"}
           alt="logo"
+          width={500}
+          decoding="async"
+          loading="lazy"
         />
         <div class="flex flex-col py-6 md:py-12 text-center gap-5">
           <h1 class="text-3xl md:text-6xl font-bold">Web och mjukvara</h1>
@@ -111,16 +116,31 @@ import supai from "../assets/Supai.png";
         </div>
       </div>
     </div>
-    <!-- <div
+    <div
       class="flex flex-col items-center justify-left gap-4 p-2 pb-12 md:p-0 md:pb-24"
     >
       <div
-        class="lg:w-[1300px] shrink flex flex-col bg-white p-7 h-[500px] rounded-xl"
+        class="lg:w-[1300px] shrink flex gap-4 justify-between p-7 rounded-xl"
       >
-        <h1 class="text-2xl md:text-4xl font-bold text md:text-left">
-          Affärssystem
-        </h1>
+        <div class="bg-white p-4 rounded-lg grow">
+          <h1 class="text-2xl md:text-4xl font-bold text md:text-left p-4">
+            Affärsspecifik mjukvara
+          </h1>
+          <p>
+            Vi bygger mjukvara som är anpassad för ditt företag. Det kan vara
+            allt från en enkel kunddatabas till en komplex affärssystem. Vi
+            hjälper dig att hitta rätt lösning för ditt företag.
+          </p>
+        </div>
+        <Image
+          src={PortraitBridge}
+          alt="portrait"
+          class="rounded-lg w-1/3"
+          width={400}
+          decoding="async"
+          loading="lazy"
+        />
       </div>
-    </div> -->
-  </div>
-</Layout>
+    </div>
+  </div></Layout
+>
