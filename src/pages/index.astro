@@ -16,7 +16,7 @@ import StartHero from "../components/StartHero.astro";
 <Layout title="Cabanossy - Web och mjukvara">
   <div class="items-center">
     <StartHero />
-    <div class="flex flex-col items-center gap-8 pb-20 md:pt-24">
+    <div class="flex flex-col items-center gap-8 pb-20 pt-16 md:pt-24">
       <div class="max-w-[1300px] p-3 xl:p-0">
         <h2 class="text-2xl md:text-4xl font-bold text-center md:text-left">
           Våra affärsområden
@@ -24,7 +24,7 @@ import StartHero from "../components/StartHero.astro";
         <div
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 pt-12"
         >
-          <BusinessAreaCard title="Webplatser">
+          <BusinessAreaCard title="Webbplatser">
             <p>
               Detta är vanligtvis vad du som reklambyrå eller företag är
               intresserad av. Med oss kan du få hjälp med att bygga bland annat:
@@ -61,11 +61,11 @@ import StartHero from "../components/StartHero.astro";
         </div>
       </div>
     </div>
-    <div class="flex flex-col items-center md:pb-20 gap-4 px-3 xl:px-0">
+    <div class="flex flex-col items-center pb-20 gap-4 px-3 xl:px-0">
       <PortraitCard />
     </div>
     <div
-      class="flex flex-col items-center justify-left gap-4 px-3 pb-12 xl:px-0 md:pb-24"
+      class="flex flex-col items-center justify-left gap-4 px-3 pb-12 xl:px-0 md:pb-20"
     >
       <div class="lg:w-[1300px] shrink">
         <div
@@ -103,32 +103,43 @@ import StartHero from "../components/StartHero.astro";
       >
         <div class="bg-white p-8 rounded-lg grow">
           <h2 class="text-3xl md:text-4xl font-bold text md:text-left mb-4">
-            Affärsspecifik mjukvara
+            Anpassad mjukvara
           </h2>
-          <p>
-            Vi bygger mjukvara som är anpassad för ditt företag. Det kan vara
-            allt från en enkel kunddatabas till en komplex affärssystem. Vi
-            hjälper dig att hitta rätt lösning för ditt företag.
+          <p class="pb-12">
+            Vi bygger mjukvara som används internt och externt.
           </p>
-          <h3 class="text-xl md:text-2xl font-bold text md:text-left mt-8 mb-4">
-            Utveckling från början
-          </h3>
-          <p>
-            Vi hjälper dig att utveckla din idé från början. Vi kan hjälpa dig
-            att skapa en MVP (Minimum Viable Product) för att testa din idé på
-            marknaden. Vi kan även hjälpa dig att skala upp din produkt när det
-            är dags.
-          </p>
-          <h3 class="text-xl md:text-2xl font-bold text md:text-left mt-8 mb-4">
-            Stöd med existerande lösning
-          </h3>
-          <p>
-            Har du redan en lösning som du vill utveckla vidare? Vi kan hjälpa
-            dig att utveckla din existerande lösning. Vi kan även hjälpa dig att
-            förbättra prestanda och säkerhet.
-          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-gray-100 p-4 rounded-md cursor-pointer">
+              <h3 class="text-2xl font-bold text-center md:text-left pb-2">
+                Interna verktyg
+              </h3>
+              <p>
+                Vi hjälper företag att skapa externa verktyg som effektiviserar
+                verksamheten. Det kan till exempel vara mjukvara för
+                lagerhantering, leveransplanering eller orderhantering.
+              </p>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-md cursor-pointer">
+              <h3 class="text-2xl font-bold text-center md:text-left pb-2">
+                Externa produkter
+              </h3>
+              <p>
+                Som startup eller etablerat företag kan vi hjälpa dig att
+                utveckla lösningen som din kund använder. Ett exempel är
+                projekthanteringssystemet isol.se.
+              </p>
+              <a href="https://isol.se" target="_blank" rel="noopener">
+                <button
+                  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-4 rounded-full mt-4"
+                >
+                  Till isol.se
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="w-full md:w-3/5">
+
+        <div class="w-full md:w-4/5">
           <Image
             src={PortraitBridge}
             alt="portrait"
