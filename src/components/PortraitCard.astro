@@ -1,6 +1,9 @@
 ---
 import Portrait from "../assets/portrait.jpg";
 import { Image } from "astro:assets";
+import NetIcon from "../assets/net-logo.png";
+import ReactIcon from "../assets/react-logo.png";
+import TsLogo from "../assets/ts-logo.png";
 ---
 
 <div
@@ -12,17 +15,34 @@ import { Image } from "astro:assets";
     class="object-contain rounded-t-lg lg:rounded-r-none lg:rounded-l-xl w-full lg:w-auto"
     alt="Adam Liljenberg porträttbild"
   />
-  <div class="p-5 md:p-8 flex flex-col gap-4">
-    <h2 class="text-4xl font-bold md:mb-2">Vi håller oss uppdaterade</h2>
-    <p class="md:text-xl">
-      Jag (Adam) och mina samarbetspartners håller oss ständigt uppdaterade med
-      den senaste tekniken. Vi drivs alla av att skapa webbplatser som är
-      moderna och användarvänliga.
-    </p>
-    <small>
-      <a href="https://www.linkedin.com/in/adam-liljenberg/">
-        Läs mer om mig på LinkedIn
-      </a>
-    </small>
+  <div class="flex flex-col gap-4 justify-between">
+    <div class="p-5 md:p-8 flex flex-col gap-4">
+      <h2 class="text-4xl font-bold md:mb-2">Vi håller oss uppdaterade</h2>
+      <p class="md:text-xl">
+        Jag (Adam) och mina samarbetspartners håller oss ständigt uppdaterade
+        med den senaste tekniken. Vi drivs alla av att skapa webbplatser som är
+        moderna och användarvänliga.
+      </p>
+      <small>
+        <a href="https://www.linkedin.com/in/adam-liljenberg/">
+          Läs mer om mig på LinkedIn
+        </a>
+      </small>
+    </div>
+    <div
+      class="mt-2 bg-gray-100 p-5 rounded-b-xl xl:rounded-bl-none flex gap-3 flex-col"
+    >
+      <small>Några utvalda tekniker och verktyg:</small>
+      <div class="flex gap-2">
+        <Image src={NetIcon} alt="Dotnet logo" height={50} class="inline" />
+        <Image
+          src={ReactIcon}
+          alt="React logo"
+          height={50}
+          class="inline p-1"
+        />
+        <Image src={TsLogo} alt="Typescript logo" height={50} class="inline" />
+      </div>
+    </div>
   </div>
 </div>
