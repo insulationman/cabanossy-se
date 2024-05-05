@@ -11,24 +11,32 @@ import { Image } from "astro:assets";
 const { title, description, buttontext, link, image } = Astro.props;
 ---
 
-<div class="bg-white rounded-lg p-8 md:items-center flex space-x-8">
-  <div class="w-1/6 flex flex-col items-center">
-    <Image
-      src={image}
-      class="rounded-lg pt-3 md:p-0"
-      width="100"
-      alt={title + " logo"}
-    />
+<div class="bg-white flex rounded-xl">
+  <div class="bg-blue-300 z-10 rounded-l-xl flex flex-col justify-end py-4">
+    <div class="w-8 flex justify-center">
+      <span
+        class="-rotate-180 text-lg transform inline-block font-bold text-blue-800"
+        style="writing-mode: vertical-rl; ;">WEBPLATS</span
+      >
+    </div>
   </div>
-  <div class="w-5/6">
-    <h1 class="text-2xl font-bold">
-      {title}
-    </h1>
-    <p class="mb-2">
-      {description}
-    </p>
-    <a class="bg-blue-200 p-1 px-3 rounded" target="_blank" href={link}>
-      {buttontext}
-    </a>
+  <!-- <div class="text-white -rotate-90 text-lg">WEBPLATS</div> -->
+  <div class="flex flex-col p-4 pr-8">
+    <div class="flex flex-col items-center h-32 justify-center">
+      <Image src={image} class="rounded-lg" width="100" alt={title + " logo"} />
+    </div>
+    <div class="grow flex flex-col">
+      <h1 class="text-2xl font-bold">
+        {title}
+      </h1>
+      <p class="mb-4">
+        {description}
+      </p>
+      <a target="_blank" href={link} class="mt-auto">
+        <button class="bg-blue-200 p-1 px-3 rounded">
+          {buttontext}
+        </button>
+      </a>
+    </div>
   </div>
 </div>

@@ -85,11 +85,10 @@ import BusinessAreaBadg from "../components/BusinessAreaBadg.astro";
     <div
       class="flex flex-col items-center justify-left gap-4 p-2 pb-12 xl:px-0 md:pb-24"
     >
-      <div class="lg:w-[1300px] shrink flex flex-col items-center">
-        <h2 class="text-xl md:text-2xl pb-6 font-bold text-center md:text-left">
-          Några av våra senaste webbplatser
-        </h2>
-        <div class="gap-2 md:gap-2 grid grid-cols-1 max-w-[1100px] shrink">
+      <div class="lg:w-[1300px] shrink">
+        <div
+          class="gap-2 md:gap-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 shrink"
+        >
           <ShowcaseSiteItem
             title="Vätterledens Invest"
             link="https://viab.se"
@@ -101,14 +100,14 @@ import BusinessAreaBadg from "../components/BusinessAreaBadg.astro";
             title="Supai Kitchen"
             link="https://supai.se/curryketchup/"
             description="Supai beskriver sig själva som en stark kraft i göteborgs matvärld och vi är glada att ha fått möjligheten arbeta tillsammans."
-            buttontext="Kolla in deras curryketchup"
+            buttontext="Läs om curryketchup"
             image={supai}
           />
           <ShowcaseSiteItem
             title="VHAB"
             link="https://vhab.se"
             description="VHAB förvaltar och investerar i bland annat företag och fastigheter. Vi har tillsammans med webb-designers hjälpt dem att skapa en hemsida som speglar deras verksamhet."
-            buttontext="Ta en titt"
+            buttontext="Besök hemsidan"
             image={vhab}
           />
         </div>
