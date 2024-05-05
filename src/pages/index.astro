@@ -9,6 +9,7 @@ import VätterledensInvest from "../assets/VätterledenInvest.png";
 import vhab from "../assets/VätterledenHolding.png";
 import supai from "../assets/Supai.png";
 import { Image } from "astro:assets";
+import BusinessAreaBadg from "../components/BusinessAreaBadg.astro";
 ---
 
 <Layout title="Cabanossy - Web och mjukvara">
@@ -41,33 +42,39 @@ import { Image } from "astro:assets";
         <div
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 py-12"
         >
-          <BusinessAreaCard title="Webbutveckling">
+          <BusinessAreaCard title="Webplatser">
             <p>
               Detta är vanligtvis vad du som reklambyrå eller företag är
               intresserad av. Med oss kan du få hjälp med att bygga bland annat:
             </p>
-            <ul class="font-bold">
-              <li>Hemsida för ditt företag</li>
-              <li>Webplatser för E-handel</li>
-            </ul>
+            <div class="flex items-start gap-1 flex-wrap">
+              <BusinessAreaBadg title="Företagshemsidor" />
+              <BusinessAreaBadg title="E-handel" />
+              <BusinessAreaBadg title="Varumärken" />
+            </div>
           </BusinessAreaCard>
           <BusinessAreaCard title="Anpassad mjukvara">
             <p>
               Vi hjälper företag att skapa mjukvara som är anpassad för deras
               verksamhet. Det kan vara allt från en enkel kunddatabas till
-              Saas-lösningar för hela branscher. Vi hjälper bland annat:
+              Saas-lösningar för hela branscher. Detta passar:
             </p>
-            <ul class="font-bold">
-              <li>Startups</li>
-              <li>Interna verktyg</li>
-            </ul>
+            <div class="flex items-start gap-1 flex-wrap">
+              <BusinessAreaBadg title="Startups" />
+              <BusinessAreaBadg title="Interna verktyg" />
+            </div>
           </BusinessAreaCard>
-          <BusinessAreaCard title="Affärskonsulting">
+          <BusinessAreaCard title="Konsulttjänster">
             <p>
               Vi hjälper företag att hitta rätt lösningar för sina behov. Det
               kan vara allt från att hitta rätt affärssystem till att skapa
               processer för att effektivisera verksamheten.
             </p>
+            <div class="flex items-start gap-1 flex-wrap">
+              <BusinessAreaBadg title="Verksamhetsutveckling" />
+              <BusinessAreaBadg title="Inköpsstöd" />
+              <BusinessAreaBadg title="Systemmigrering" />
+            </div>
           </BusinessAreaCard>
         </div>
       </div>
@@ -152,5 +159,5 @@ import { Image } from "astro:assets";
         </div>
       </div>
     </div>
-  </div></Layout
->
+  </div>
+</Layout>
