@@ -11,6 +11,7 @@ import supai from "../assets/Supai.png";
 import { Image } from "astro:assets";
 import BusinessAreaBadg from "../components/BusinessAreaBadg.astro";
 import StartHero from "../components/StartHero.astro";
+import Logo from "../assets/Cabanossy-Snurra_nobg.svg";
 ---
 
 <Layout title="Cabanossy - Web och mjukvara">
@@ -99,7 +100,7 @@ import StartHero from "../components/StartHero.astro";
       class="flex flex-col items-center justify-left gap-4 p-2 pb-12 xl:px-0 md:pb-24"
     >
       <div
-        class="xl:w-[1300px] shrink flex-col-reverse flex md:flex-row gap-2 justify-between rounded-xl"
+        class="xl:w-[1300px] shrink flex-col-reverse flex lg:flex-row gap-2 justify-between rounded-xl"
       >
         <div class="bg-white p-8 rounded-lg grow">
           <h2 class="text-3xl md:text-4xl font-bold text md:text-left mb-4">
@@ -139,17 +140,23 @@ import StartHero from "../components/StartHero.astro";
           </div>
         </div>
 
-        <div class="w-full md:w-4/5">
+        <div class="flex w-full lg:w-4/5 pb-12 lg:pb-0">
           <Image
             src={PortraitBridge}
             alt="portrait"
-            class="rounded-lg w-full"
+            class="rounded-l-lg lg:rounded-lg w-1/2 lg:w-full"
             width={700}
             decoding="async"
             loading="lazy"
           />
+          <Image
+            src={Logo}
+            alt="logo"
+            class="w-1/2 p-8 lg:hidden bg-yellow-100 rounded-r-lg"
+            width={700}
+          />
         </div>
       </div>
     </div>
-  </div>
-</Layout>
+  </div></Layout
+>
