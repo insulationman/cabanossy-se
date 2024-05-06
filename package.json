@@ -18,6 +18,7 @@
     "typescript": "^5.4.5"
   },
   "devDependencies": {
+    "@iconify-icons/material-symbols": "^1.2.58",
     "@iconify-json/mdi": "^1.1.66"
   }
 }

@@ -18,13 +18,13 @@ import StartHero from "../components/StartHero.astro";
     <StartHero />
     <div class="flex flex-col items-center gap-8 pb-20 pt-16 md:pt-24">
       <div class="max-w-[1300px] p-3 xl:p-0">
-        <h2 class="text-2xl md:text-4xl font-bold text-center md:text-left">
+        <h2 class="text-1xl md:text-2xl font-bold text-center md:text-left">
           Våra affärsområden
         </h2>
         <div
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 pt-12"
         >
-          <BusinessAreaCard title="Webbplatser">
+          <BusinessAreaCard title="Webbplatser" iconName="mdi:code">
             <p>
               Detta är vanligtvis vad du som reklambyrå eller företag är
               intresserad av. Med oss kan du få hjälp med att bygga bland annat:
@@ -35,7 +35,7 @@ import StartHero from "../components/StartHero.astro";
               <BusinessAreaBadg title="Varumärken" />
             </div>
           </BusinessAreaCard>
-          <BusinessAreaCard title="Anpassad mjukvara">
+          <BusinessAreaCard title="Anpassad mjukvara" iconName="mdi:computer">
             <p>
               Vi hjälper företag att skapa mjukvara som är anpassad för deras
               verksamhet. Det kan vara allt från en enkel kunddatabas till
@@ -46,7 +46,7 @@ import StartHero from "../components/StartHero.astro";
               <BusinessAreaBadg title="Interna verktyg" />
             </div>
           </BusinessAreaCard>
-          <BusinessAreaCard title="Konsulttjänster">
+          <BusinessAreaCard title="Konsulttjänster" iconName="mdi:account">
             <p>
               Vi hjälper företag att hitta rätt lösningar för sina behov. Det
               kan vara allt från att hitta rätt affärssystem till att skapa

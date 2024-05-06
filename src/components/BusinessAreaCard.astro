@@ -1,16 +1,23 @@
 ---
+import { Icon } from "astro-icon/components";
 interface Props {
   title: string;
+  iconName: string;
 }
 
-const { title } = Astro.props;
+const { title, iconName } = Astro.props;
 ---
 
 <div class="bg-white rounded-lg shadow-lg">
-  <h3 class="text-2xl font-bold px-8 py-6 bg-blue-300 rounded-t-lg">
-    {title}
-  </h3>
-  <div class="flex flex-col items-start gap-3 p-8 grow">
+  <div
+    class="px-6 py-4 bg-gradient-to-tr to-blue-400 from-blue-300 rounded-t-lg"
+  >
+    <Icon name={iconName} class="mr-2 text-white" size={25} />
+  </div>
+  <div class="flex flex-col items-start gap-3 p-6 grow">
+    <h3 class="text-2xl font-bold">
+      {title}
+    </h3>
     <slot />
   </div>
 </div>
