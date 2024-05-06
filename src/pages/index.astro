@@ -1,13 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Logo from "../assets/Cabanossy-Snurra_nobg.svg";
-import PortraitBridge from "../assets/bridge-portrait.jpg";
+
 import PortraitCard from "../components/PortraitCard.astro";
 
-import { Image } from "astro:assets";
 import StartHero from "../components/StartHero.astro";
 import WebsiteShowcase from "../components/WebsiteShowcase.astro";
 import BusinessAreas from "../components/BusinessAreas.astro";
+import CustomSoftwareCards from "../components/CustomSoftwareCards.astro";
 ---
 
 <Layout title="Cabanossy - Webb och mjukvara">
@@ -31,67 +30,8 @@ import BusinessAreas from "../components/BusinessAreas.astro";
     <div
       class="flex flex-col items-center justify-left gap-4 p-2 pb-12 xl:px-0 md:pb-24"
     >
-      <div
-        class="xl:w-[1300px] shrink flex-col-reverse flex lg:flex-row gap-2 justify-between rounded-xl"
-      >
-        <div class="bg-white p-5 md:p-8 rounded-lg grow shadow-lg">
-          <h2 class="text-3xl md:text-4xl font-bold text md:text-left mb-4">
-            Anpassad mjukvara
-          </h2>
-          <p class="pb-12">
-            Vi bygger mjukvara som används internt och externt.
-          </p>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="bg-gray-100 p-4 rounded-md">
-              <h3 class="text-2xl font-bold text-center md:text-left pb-2">
-                Interna verktyg
-              </h3>
-              <p>
-                Vi hjälper företag att skapa externa verktyg som effektiviserar
-                verksamheten. Det kan till exempel vara mjukvara för
-                lagerhantering, leveransplanering eller orderhantering.
-              </p>
-            </div>
-            <div class="bg-gray-100 p-4 rounded-md">
-              <h3 class="text-2xl font-bold text-center md:text-left pb-2">
-                Externa produkter
-              </h3>
-              <p>
-                Som startup eller etablerat företag kan vi hjälpa dig att
-                utveckla lösningen som din kund använder. Ett exempel är
-                projekthanteringssystemet isol.se.
-              </p>
-              <a
-                href="https://isol.se"
-                target="_blank"
-                rel="noopener"
-                class="flex justify-center md:justify-start"
-              >
-                <button
-                  class="bg-blue-700 hover:bg-blue-800 text-white font-bold py-1 px-4 rounded-full mt-4"
-                >
-                  Till isol.se
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="flex w-full lg:w-4/5 shadow-lg rounded-lg mb-12 md:mb-0">
-          <Image
-            src={PortraitBridge}
-            alt="portrait"
-            class="rounded-l-lg lg:rounded-lg w-1/2 lg:w-full"
-            width={700}
-            decoding="async"
-            loading="lazy"
-          />
-          <Image
-            src={Logo}
-            alt="logo"
-            class="w-1/2 p-8 lg:hidden bg-yellow-100 rounded-r-lg"
-            width={700}
-          />
-        </div>
+      <div class="xl:w-[1300px]">
+        <CustomSoftwareCards />
       </div>
     </div>
   </div>
