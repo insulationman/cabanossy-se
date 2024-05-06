@@ -7,6 +7,8 @@ import StartHero from "../components/StartHero.astro";
 import WebsiteShowcase from "../components/WebsiteShowcase.astro";
 import BusinessAreas from "../components/BusinessAreas.astro";
 import CustomSoftwareCards from "../components/CustomSoftwareCards.astro";
+import Logo from "../assets/Cabanossy-Snurra_nobg.svg";
+import { Image } from "astro:assets";
 ---
 
 <Layout title="Cabanossy - Webb och mjukvara">
@@ -34,5 +36,47 @@ import CustomSoftwareCards from "../components/CustomSoftwareCards.astro";
         <CustomSoftwareCards />
       </div>
     </div>
-  </div>
-</Layout>
+    <div
+      class="flex flex-col items-center justify-left gap-4 p-2 pb-12 xl:px-0 md:pb-24"
+    >
+      <div class="xl:w-[1300px]">
+        <div class="bg-white flex rounded-xl shadow-lg xl:w-[900px]">
+          <div
+            class="z-10 rounded-l-xl flex flex-col justify-end py-4 bg-gradient-to-t to-green-400 from-green-300"
+          >
+            <div class="w-8 flex justify-center">
+              <span
+                class="-rotate-180 text-lg transform inline-block uppercase font-bold text-green-800"
+                style="writing-mode: vertical-rl; ;"
+                >Optimering
+              </span>
+            </div>
+          </div>
+          <!-- <div class="text-white -rotate-90 text-lg">WEBPLATS</div> -->
+          <div
+            class="flex flex-col-reverse md:flex-row p-8 gap-4 md:items-center"
+          >
+            <div class="grow flex flex-col">
+              <h1 class="text-2xl font-bold">
+                Detta är en optimerad webbplats
+              </h1>
+              <p class="">
+                Sidan du besöker just nu är byggd med Astro, ett verktyg som gör
+                att sidan laddas mycket snabbt och är optimerad för SEO. Enligt
+                Goolgles mätverktyg får sidan
+                <strong> maxpoäng </strong>
+                i alla kategorier.
+              </p>
+            </div>
+            <Image
+              src={Logo}
+              class={"h-16 w-16 md:h-32 md:w-32 shrink rounded-full bg-yellow-200"}
+              alt="cabanossy logo"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div></Layout
+>
