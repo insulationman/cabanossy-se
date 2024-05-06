@@ -1,0 +1,32 @@
+---
+import ShowcaseSiteItem from "../components/ShowcaseSiteItem.astro";
+import VätterledensInvest from "../assets/VätterledenInvest.png";
+import vhab from "../assets/VätterledenHolding.png";
+import supai from "../assets/Supai.png";
+---
+
+<div
+  class="gap-2 md:gap-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 shrink"
+>
+  <ShowcaseSiteItem
+    title="Vätterledens Invest"
+    link="https://viab.se"
+    description="Tillsammans med designers från marknadsbyrån 2028 skapade vi en hemsida för Vätterledens Invest. Vi är mycket nöjda med resultatet:"
+    buttontext="Besök hemsidan"
+    image={VätterledensInvest}
+  />
+  <ShowcaseSiteItem
+    title="Supai Kitchen"
+    link="https://supai.se/curryketchup/"
+    description="Supai beskriver sig själva som en stark kraft i göteborgs matvärld och vi är glada att ha fått möjligheten arbeta tillsammans."
+    buttontext="Läs om curryketchup"
+    image={supai}
+  />
+  <ShowcaseSiteItem
+    title="VHAB"
+    link="https://vhab.se"
+    description="VHAB förvaltar och investerar i bland annat företag och fastigheter. Vi har tillsammans med webb-designers hjälpt dem att skapa en hemsida som speglar deras verksamhet."
+    buttontext="Besök hemsidan"
+    image={vhab}
+  />
+</div>

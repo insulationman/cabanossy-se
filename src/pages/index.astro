@@ -1,16 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Logo from "../assets/Cabanossy-Snurra_nobg.svg";
-import BusinessAreaCard from "../components/BusinessAreaCard.astro";
 import PortraitBridge from "../assets/bridge-portrait.jpg";
 import PortraitCard from "../components/PortraitCard.astro";
-import ShowcaseSiteItem from "../components/ShowcaseSiteItem.astro";
-import VätterledensInvest from "../assets/VätterledenInvest.png";
-import vhab from "../assets/VätterledenHolding.png";
-import supai from "../assets/Supai.png";
+
 import { Image } from "astro:assets";
-import BusinessAreaBadg from "../components/BusinessAreaBadg.astro";
 import StartHero from "../components/StartHero.astro";
+import WebsiteShowcase from "../components/WebsiteShowcase.astro";
+import BusinessAreas from "../components/BusinessAreas.astro";
 ---
 
 <Layout title="Cabanossy - Webb och mjukvara">
@@ -18,44 +15,7 @@ import StartHero from "../components/StartHero.astro";
     <StartHero />
     <div class="flex flex-col items-center gap-8 pb-20 pt-16 md:pt-24">
       <div class="max-w-[1300px] p-3 xl:p-0">
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8"
-        >
-          <BusinessAreaCard title="Webbplatser" iconName="mdi:code">
-            <p>
-              Detta är vanligtvis vad du som reklambyrå eller företag är
-              intresserad av. Med oss kan du få hjälp med att bygga bland annat:
-            </p>
-            <div class="flex items-start gap-1 flex-wrap">
-              <BusinessAreaBadg title="Företagshemsidor" />
-              <BusinessAreaBadg title="E-handel" />
-              <BusinessAreaBadg title="Varumärken" />
-            </div>
-          </BusinessAreaCard>
-          <BusinessAreaCard title="Anpassad mjukvara" iconName="mdi:computer">
-            <p>
-              Vi hjälper företag att skapa mjukvara som är anpassad för deras
-              verksamhet. Det kan vara allt från en enkel kunddatabas till
-              Saas-lösningar för hela branscher. Detta passar:
-            </p>
-            <div class="flex items-start gap-1 flex-wrap">
-              <BusinessAreaBadg title="Startups" />
-              <BusinessAreaBadg title="Interna verktyg" />
-            </div>
-          </BusinessAreaCard>
-          <BusinessAreaCard title="Konsulting" iconName="mdi:account">
-            <p>
-              Vi hjälper företag att hitta rätt lösningar för sina behov. Det
-              kan vara allt från att hitta rätt affärssystem till att skapa
-              processer för att effektivisera verksamheten.
-            </p>
-            <div class="flex items-start gap-1 flex-wrap">
-              <BusinessAreaBadg title="Verksamhetsutveckling" />
-              <BusinessAreaBadg title="Inköpsstöd" />
-              <BusinessAreaBadg title="Systemmigrering" />
-            </div>
-          </BusinessAreaCard>
-        </div>
+        <BusinessAreas />
       </div>
     </div>
     <div class="flex flex-col items-center pb-20 gap-4 px-3 xl:px-0">
@@ -65,31 +25,7 @@ import StartHero from "../components/StartHero.astro";
       class="flex flex-col items-center justify-left gap-4 px-3 pb-12 xl:px-0 md:pb-20"
     >
       <div class="lg:w-[1300px] shrink">
-        <div
-          class="gap-2 md:gap-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 shrink"
-        >
-          <ShowcaseSiteItem
-            title="Vätterledens Invest"
-            link="https://viab.se"
-            description="Tillsammans med designers från marknadsbyrån 2028 skapade vi en hemsida för Vätterledens Invest. Vi är mycket nöjda med resultatet:"
-            buttontext="Besök hemsidan"
-            image={VätterledensInvest}
-          />
-          <ShowcaseSiteItem
-            title="Supai Kitchen"
-            link="https://supai.se/curryketchup/"
-            description="Supai beskriver sig själva som en stark kraft i göteborgs matvärld och vi är glada att ha fått möjligheten arbeta tillsammans."
-            buttontext="Läs om curryketchup"
-            image={supai}
-          />
-          <ShowcaseSiteItem
-            title="VHAB"
-            link="https://vhab.se"
-            description="VHAB förvaltar och investerar i bland annat företag och fastigheter. Vi har tillsammans med webb-designers hjälpt dem att skapa en hemsida som speglar deras verksamhet."
-            buttontext="Besök hemsidan"
-            image={vhab}
-          />
-        </div>
+        <WebsiteShowcase />
       </div>
     </div>
     <div
@@ -140,7 +76,6 @@ import StartHero from "../components/StartHero.astro";
             </div>
           </div>
         </div>
-
         <div class="flex w-full lg:w-4/5 shadow-lg rounded-lg mb-12 md:mb-0">
           <Image
             src={PortraitBridge}
