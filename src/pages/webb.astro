@@ -4,8 +4,90 @@ import BusinessAreaLayout from "../layouts/BusinessAreaLayout.astro";
 ---
 
 <BusinessAreaLayout title="Webbsidor">
+  <div class="xl:w-[1300px] p-2 lg:p-0 grid grid-cols-2 gap-4 mb-16">
+    <div class="bg-white rounded-xl shadow-xl">
+      <div
+        class="px-6 py-4 bg-gradient-to-tr to-blue-400 from-blue-300 flex justify-between items-center rounded-t-xl"
+      >
+        <!-- <Icon name="mdi:open-in-new" class="text-blue-800" size={22} /> -->
+      </div>
+      <div class="p-8">
+        <h2 class="text-2xl font-bold mb-4">Ny webbplats</h2>
+        <p class="mb-8">
+          Vi hjälper dig att skapa en ny webbplats från grunden. Hör av dig för
+          att lära dig mer om hur vi kan utveckla tillsammans.
+        </p>
+        <a
+          href="/kontakt"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >Kontakta oss</a
+        >
+      </div>
+    </div>
+    <div class="bg-white rounded-xl shadow-xl">
+      <div
+        class="px-6 py-4 bg-gradient-to-tr to-blue-400 from-blue-300 flex justify-between items-center rounded-t-xl"
+      >
+        <!-- <Icon name="mdi:open-in-new" class="text-blue-800" size={22} /> -->
+      </div>
+      <div class="p-8">
+        <h2 class="text-2xl font-bold mb-4">Befintlig webbplats</h2>
+        <p class="mb-8">
+          Har du en befintlig webbplats som behöver uppdateras? Vi hjälper dig
+          att uppdatera och förbättra din webbplats.
+        </p>
+        <a
+          href="/kontakt"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >Kontakta oss</a
+        >
+      </div>
+    </div>
+  </div>
+  <ul class="xl:w-[1300px] p-2 lg:p-0 grid grid-cols-8 gap-4 mb-16">
+    <li
+      class="bg-gradient-to-tr to-green-300 from-green-200 rounded-xl shadow-lg p-4 text-center font-bold text-xl flex justify-center items-center aspect-square transform hover:scale-105 transition-transform"
+    >
+      E-Handel
+    </li>
+    <li
+      class="bg-gradient-to-tr to-red-300 from-red-200 rounded-xl shadow-lg p-4 text-center font-bold text-xl flex justify-center items-center aspect-square hover:scale-105 transition-transform"
+    >
+      Varumärke
+    </li>
+    <li
+      class="bg-gradient-to-tr to-amber-200 from-amber-100 rounded-xl shadow-lg p-4 text-center font-bold text-xl flex justify-center items-center aspect-square hover:scale-105 transition-transform"
+    >
+      Företagssida
+    </li>
+    <li
+      class="bg-gradient-to-tr to-slate-200 from-slate-100 rounded-xl shadow-lg p-4 text-center font-bold text-xl flex justify-center items-center aspect-square hover:scale-105 transition-transform"
+    >
+      Prospekt
+    </li>
+    <li
+      class="bg-gradient-to-tr to-purple-200 from-purple-100 rounded-xl shadow-lg p-4 text-center font-bold text-xl flex justify-center items-center aspect-square hover:scale-105 transition-transform"
+    >
+      Evenemang
+    </li>
+    <li
+      class="bg-gradient-to-tr to-blue-200 from-blue-100 rounded-xl shadow-lg p-4 text-center font-bold text-xl flex justify-center items-center aspect-square hover:scale-105 transition-transform"
+    >
+      Personal branding
+    </li>
+    <li
+      class="bg-gradient-to-tr to-teal-200 from-teal-100 rounded-xl shadow-lg p-4 text-center font-bold text-xl flex justify-center items-center aspect-square hover:scale-105 transition-transform"
+    >
+      Rekrytering
+    </li>
+    <li
+      class="bg-gradient-to-tr to-cyan-200 from-cyan-100 rounded-xl shadow-lg p-4 text-center font-bold text-xl flex justify-center items-center aspect-square hover:scale-105 transition-transform"
+    >
+      Utbildning
+    </li>
+  </ul>
   <div class="xl:w-[1300px] p-8 bg-white rounded-xl shadow-xl mb-16">
-    <h1 class="text-4xl font-bold mb-4">Uppnå ditt mål</h1>
+    <h1 class="text-4xl font-bold mb-4">Så går det till</h1>
     <p class="mb-8">
       Vi hjälper dig att skapa en webbsida som är anpassad efter dina behov och
       mål. Oavsett om du vill ha en enkel hemsida eller en mer avancerad
@@ -17,13 +99,9 @@ import BusinessAreaLayout from "../layouts/BusinessAreaLayout.astro";
       bara ska fungera som en visitkortssida, medan andra vill ha en sida som
       ska fungera som en säljkanal. Till exempel kan man:
     </p>
-    <ul class="list-disc pl-8 mb-8">
-      <li>Sälja bättre via webben</li>
-      <li>Marknadsföra sitt företag</li>
-      <li>Marknadsföra ett varumärke</li>
-      <li>Skapa en sida för att marknadsföra en tjänst</li>
-      <li>Dela med sig av nyheter och inlägg</li>
-    </ul>
+  </div>
+  <div class="xl:w-[1300px] p-8 bg-white rounded-xl shadow-xl mb-16">
+    <h2 class="text-2xl font-bold mb-4">Så går det till</h2>
   </div>
   <div class="xl:w-[1300px]">
     <OptimizedCard />
