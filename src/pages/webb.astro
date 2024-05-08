@@ -1,5 +1,6 @@
 ---
 import OptimizedCard from "../components/OptimizedCard.astro";
+import WebPageTypesMosaic from "../components/WebPageTypesMosaic.astro";
 import BusinessAreaLayout from "../layouts/BusinessAreaLayout.astro";
 ---
 
@@ -44,48 +45,9 @@ import BusinessAreaLayout from "../layouts/BusinessAreaLayout.astro";
       </div>
     </div>
   </div>
-  <ul class="xl:w-[1300px] p-2 lg:p-0 grid grid-cols-8 gap-4 mb-16">
-    <li
-      class="bg-gradient-to-tr to-green-300 from-green-200 rounded-xl shadow-lg p-4 text-center font-bold text-xl flex justify-center items-center aspect-square transform hover:scale-105 transition-transform"
-    >
-      E-Handel
-    </li>
-    <li
-      class="bg-gradient-to-tr to-red-300 from-red-200 rounded-xl shadow-lg p-4 text-center font-bold text-xl flex justify-center items-center aspect-square hover:scale-105 transition-transform"
-    >
-      Varumärke
-    </li>
-    <li
-      class="bg-gradient-to-tr to-amber-200 from-amber-100 rounded-xl shadow-lg p-4 text-center font-bold text-xl flex justify-center items-center aspect-square hover:scale-105 transition-transform"
-    >
-      Företagssida
-    </li>
-    <li
-      class="bg-gradient-to-tr to-slate-200 from-slate-100 rounded-xl shadow-lg p-4 text-center font-bold text-xl flex justify-center items-center aspect-square hover:scale-105 transition-transform"
-    >
-      Prospekt
-    </li>
-    <li
-      class="bg-gradient-to-tr to-purple-200 from-purple-100 rounded-xl shadow-lg p-4 text-center font-bold text-xl flex justify-center items-center aspect-square hover:scale-105 transition-transform"
-    >
-      Evenemang
-    </li>
-    <li
-      class="bg-gradient-to-tr to-blue-200 from-blue-100 rounded-xl shadow-lg p-4 text-center font-bold text-xl flex justify-center items-center aspect-square hover:scale-105 transition-transform"
-    >
-      Personal branding
-    </li>
-    <li
-      class="bg-gradient-to-tr to-teal-200 from-teal-100 rounded-xl shadow-lg p-4 text-center font-bold text-xl flex justify-center items-center aspect-square hover:scale-105 transition-transform"
-    >
-      Rekrytering
-    </li>
-    <li
-      class="bg-gradient-to-tr to-cyan-200 from-cyan-100 rounded-xl shadow-lg p-4 text-center font-bold text-xl flex justify-center items-center aspect-square hover:scale-105 transition-transform"
-    >
-      Utbildning
-    </li>
-  </ul>
+  <div class="xl:w-[1300px] p-2 lg:p-0">
+    <WebPageTypesMosaic />
+  </div>
   <div class="xl:w-[1300px] p-8 bg-white rounded-xl shadow-xl mb-16">
     <h1 class="text-4xl font-bold mb-4">Så går det till</h1>
     <p class="mb-8">
