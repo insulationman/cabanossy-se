@@ -5,8 +5,10 @@ import BusinessAreaLayout from "../layouts/BusinessAreaLayout.astro";
 ---
 
 <BusinessAreaLayout title="Mjukvara">
-  <div class="xl:w-[1300px] p-2 lg:p-0 gap-4 mb-16 grid grid-cols-2">
-    <div class="bg-white-800 p-8 rounded-lg bg-white">
+  <div
+    class="xl:w-[1300px] p-2 lg:p-0 gap-4 mb-16 grid grid-cols-1 lg:grid-cols-2"
+  >
+    <div class="bg-white-800 rounded-xl bg-blue-100 p-8">
       <h2 class="text-2xl font-bold">Interna och externa produkter</h2>
       <p class="">
         Vi bygger mjukvara för interna och externa produkter. Vi har erfarenhet
@@ -14,6 +16,13 @@ import BusinessAreaLayout from "../layouts/BusinessAreaLayout.astro";
         arbetsflöden till kundvända produkter som kan användas av tusentals
         användare.
       </p>
+      <a href="mailto:info@cabanossy.se?subject=Webbplats">
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg mt-2"
+        >
+          Kontakta oss
+        </button>
+      </a>
     </div>
     <code
       class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6"
@@ -23,7 +32,7 @@ import BusinessAreaLayout from "../layouts/BusinessAreaLayout.astro";
           >{
             `<div>
   <h1>Wow, you're really into details!</h1>
-  <p>That's where the devil is</p>
+  <p>That's where you'll find the devil</p>
   <p class='text-small'>And yes, we know this is just HTML</p>
 </div>`
           }
