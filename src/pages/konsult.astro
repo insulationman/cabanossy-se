@@ -1,0 +1,42 @@
+---
+import BusinessAreaLayout from "../layouts/BusinessAreaLayout.astro";
+import Logo from "../assets/Cabanossy-Snurra_nobg.svg";
+import { Image } from "astro:assets";
+---
+
+<BusinessAreaLayout
+  title="Konsult"
+  description="Konstulttjänster inom IT och verksamthetsutveckling."
+>
+  <div
+    class="xl:w-[1300px]
+  p-2
+  lg:p-0
+  gap-4
+  mb-16
+  grid
+  grid-cols-1
+  lg:grid-cols-4"
+  >
+    <div class="bg-white-800 rounded-xl bg-blue-100 p-8 lg:col-span-3">
+      <h2 class="text-2xl font-bold">Konsulttjänster</h2>
+      <p class="">
+        Vi erbjuder konsulttjänster inom IT och verksamhetsutveckling. Vi
+        hjälper dig att hitta rätt lösning för din verksamhet.
+      </p>
+      <a href="mailto:info@cabanossy.se?subject=Webbplats">
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg mt-2"
+        >
+          Kontakta oss
+        </button>
+      </a>
+    </div>
+    <Image
+      src={Logo}
+      alt="logo"
+      class="p-8 bg-yellow-100 rounded-xl"
+      width={700}
+    />
+  </div>
+</BusinessAreaLayout>
