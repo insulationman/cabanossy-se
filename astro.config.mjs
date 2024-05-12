@@ -13,6 +13,7 @@ export default defineConfig({
     favicons({
       masterPicture: "./src/assets/favicon.svg",
       emitAssets: true,
+      faviconsDarkMode: false,
     }),
   ],
 });
