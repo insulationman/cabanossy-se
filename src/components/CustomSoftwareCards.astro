@@ -5,14 +5,14 @@ import { Image } from "astro:assets";
 ---
 
 <div
-  class="shrink flex-col-reverse flex lg:flex-row gap-2 justify-between rounded-xl"
+  class="shrink bg-white lg:grid-cols-5 flex flex-col shadow-lg lg:grid rounded-xl"
 >
-  <div class="bg-white p-5 md:p-8 rounded-lg grow shadow-lg">
+  <div class="p-5 md:p-8 sm:col-span-4">
     <h2 class="text-3xl md:text-4xl font-bold text md:text-left mb-4">
       Anpassad mjukvara
     </h2>
-    <p class="pb-12">Vi bygger mjukvara som används internt och externt.</p>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <!-- <p class="pb-12">Vi bygger mjukvara som används internt och externt.</p> -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
       <div class="bg-gray-100 p-4 rounded-md">
         <h3 class="text-2xl font-bold text-center md:text-left pb-2">
           Interna verktyg
@@ -47,11 +47,13 @@ import { Image } from "astro:assets";
       </div>
     </div>
   </div>
-  <div class="flex w-full lg:w-4/5 shadow-lg rounded-lg mb-12 md:mb-0">
+  <div
+    class="flex rounded-r-lg mb-12 md:mb-0 order-first lg:order-none lg:col-span-1 lg:rounded-l-lg"
+  >
     <Image
       src={PortraitBridge}
       alt="portrait"
-      class="rounded-l-lg lg:rounded-lg w-1/2 lg:w-full"
+      class="w-1/2 lg:w-full rounded-tl-lg lg:rounded-none lg:rounded-r-lg"
       width={700}
       decoding="async"
       loading="lazy"
@@ -59,7 +61,7 @@ import { Image } from "astro:assets";
     <Image
       src={Logo}
       alt="logo"
-      class="w-1/2 p-8 lg:hidden bg-yellow-100 rounded-r-lg"
+      class="w-1/2 p-8 lg:hidden bg-yellow-100 rounded-tr-lg"
       width={700}
     />
   </div>
