@@ -2,6 +2,9 @@
 import OptimizedCard from "../components/OptimizedCard.astro";
 import WebPageTypesMosaic from "../components/WebPageTypesMosaic.astro";
 import BusinessAreaLayout from "../layouts/BusinessAreaLayout.astro";
+import Image from "astro/components/Image.astro";
+import Website from "../assets/website.svg";
+import Together from "../assets/together.svg";
 ---
 
 <BusinessAreaLayout
@@ -10,11 +13,8 @@ import BusinessAreaLayout from "../layouts/BusinessAreaLayout.astro";
 >
   <div class="xl:w-[1300px] p-2 lg:p-0 grid md:grid-cols-2 gap-4 mb-16">
     <div class="bg-white rounded-xl shadow-xl">
-      <div
-        class="px-6 py-4 bg-gradient-to-tr to-blue-400 from-blue-300 flex justify-between items-center rounded-t-xl"
-      >
-      </div>
       <div class="p-8">
+        <Image src={Website} alt="Website" class="h-36 mx-auto mb-8" />
         <h2 class="text-2xl font-bold mb-4">Ny webbplats</h2>
         <p class="mb-8">
           Vi hjälper dig att skapa en ny webbplats från grunden. Hör av dig för
@@ -28,11 +28,13 @@ import BusinessAreaLayout from "../layouts/BusinessAreaLayout.astro";
       </div>
     </div>
     <div class="bg-white rounded-xl shadow-xl">
-      <div
-        class="px-6 py-4 bg-gradient-to-tr to-blue-400 from-blue-300 flex justify-between items-center rounded-t-xl"
-      >
-      </div>
       <div class="p-8">
+        <Image
+          src={Together}
+          height={300}
+          alt="Together"
+          class="h-36 mx-auto mb-8"
+        />
         <h2 class="text-2xl font-bold mb-4">Befintlig webbplats</h2>
         <p class="mb-8">
           Har du en befintlig webbplats som behöver uppdateras? Vi hjälper dig
