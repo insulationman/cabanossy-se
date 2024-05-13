@@ -4,6 +4,7 @@ import { Image } from "astro:assets";
 import NetIcon from "../assets/net-logo.png";
 import ReactIcon from "../assets/react-logo.png";
 import TsLogo from "../assets/ts-logo.png";
+import WordPress from "../assets/wordpress.png";
 ---
 
 <div
@@ -26,14 +27,13 @@ import TsLogo from "../assets/ts-logo.png";
       </p>
       <small>
         <a href="https://www.linkedin.com/in/adam-liljenberg/">
-          Läs mer om mig på LinkedIn
+          Följ Adam på LinkedIn
         </a>
       </small>
     </div>
     <div
       class="mt-2 bg-gray-100 p-5 rounded-b-xl xl:rounded-bl-none flex gap-3 flex-col"
     >
-      <small>Några utvalda tekniker och verktyg:</small>
       <div class="flex gap-2">
         <Image src={NetIcon} alt="Dotnet logo" height={50} class="inline" />
         <Image
@@ -43,6 +43,12 @@ import TsLogo from "../assets/ts-logo.png";
           class="inline p-1"
         />
         <Image src={TsLogo} alt="Typescript logo" height={50} class="inline" />
+        <Image
+          src={WordPress}
+          alt="WordPress logo"
+          height={50}
+          class="inline"
+        />
       </div>
     </div>
   </div>
