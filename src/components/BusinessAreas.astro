@@ -1,10 +1,21 @@
 ---
 import BusinessAreaCard from "../components/BusinessAreaCard.astro";
 import BusinessAreaBadg from "../components/BusinessAreaBadg.astro";
+import Team from "../assets/team.svg";
+import Office from "../assets/office.svg";
+import Deliveries from "../assets/deliveries.svg";
+import PairProgramming from "../assets/pairprogramming.svg";
+import Conversation from "../assets/conversation.svg";
+import Website from "../assets/website.svg";
 ---
 
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
-  <BusinessAreaCard title="Webbplatser" iconName="mdi:code" href="/webb">
+  <BusinessAreaCard
+    title="Webbplatser"
+    iconName="mdi:code"
+    href="/webb"
+    image={Website}
+  >
     <p>
       Vi arbetar direkt med dig som behöver hjälp med egna webbplatser och som
       partner för att leverera webbplatser till dina kunder. Detta passar:
@@ -19,6 +30,7 @@ import BusinessAreaBadg from "../components/BusinessAreaBadg.astro";
     title="Anpassad mjukvara"
     iconName="mdi:computer"
     href="/mjukvara"
+    image={PairProgramming}
   >
     <p>
       Vi skapar mjukvara som är anpassad för olika verksamheter. Det kan vara
@@ -31,7 +43,12 @@ import BusinessAreaBadg from "../components/BusinessAreaBadg.astro";
       <BusinessAreaBadg title="Integrationer" />
     </div>
   </BusinessAreaCard>
-  <BusinessAreaCard title="Konsulting" iconName="mdi:account" href="/konsult">
+  <BusinessAreaCard
+    title="Konsulting"
+    iconName="mdi:account"
+    href="/konsult"
+    image={Conversation}
+  >
     <p>
       Vi erbjuder stöd när ditt företag utvecklas. Vår expetis gör att ditt
       företag kan fokusera på det ni är bäst på. Vi kan bland annat ge stöd

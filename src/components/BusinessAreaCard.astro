@@ -1,25 +1,24 @@
 ---
+import Image from "astro/components/Image.astro";
+
 import { Icon } from "astro-icon/components";
 interface Props {
   title: string;
   iconName: string;
-  href?: string;
+  href: string;
+  image: ImageMetadata;
 }
 
-const { title, iconName, href } = Astro.props;
+const { title, iconName, href, image } = Astro.props;
 ---
 
 <a
   class="bg-white rounded-xl shadow-lg hover:tramsform lg:hover:scale-105 transition-transform"
   href={href}
 >
-  <div
-    class="px-6 py-4 bg-gradient-to-tr to-blue-400 from-blue-300 flex justify-between items-center rounded-t-xl"
-  >
-    <Icon name={iconName} class="mr-2 text-blue-800" size={25} />
-    <!-- <Icon name="mdi:open-in-new" class="text-blue-800" size={22} /> -->
-  </div>
   <div class="flex flex-col items-start gap-3 p-6 grow">
+    <Image src={image} alt={title + " icon"} class="w-full h-32" />
+
     <h2 class="text-2xl font-bold">
       {title}
     </h2>
