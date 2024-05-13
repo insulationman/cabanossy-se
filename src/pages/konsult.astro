@@ -2,28 +2,58 @@
 import BusinessAreaLayout from "../layouts/BusinessAreaLayout.astro";
 import Logo from "../assets/Cabanossy-Snurra_nobg.svg";
 import { Image } from "astro:assets";
+import NPeople from "../assets/npeople.jpg";
 ---
 
 <BusinessAreaLayout
   title="Konsult"
   description="Konstulttjänster inom IT och verksamthetsutveckling."
 >
-  <div
-    class="xl:w-[1300px]
+  <div class="xl:w-[1300px]
+p-2
+lg:p-0
+gap-2
+mb-2
+flex">
+    <Image
+      src={NPeople}
+      class="rounded-xl shadow-lg"
+      alt="People working in an office."
+      height={500}
+    />
+    <div
+      class="p-8 bg-yellow-100 rounded-xl w-full
+      flex items-center justify-center"
+    >
+      <Image src={Logo} alt="logo" />
+    </div>
+  </div>
+  <div class="xl:w-[1300px]
   p-2
   lg:p-0
   gap-4
-  mb-16
-  grid
-  grid-cols-1
-  sm:grid-cols-4"
-  >
-    <div class="bg-white-800 rounded-xl bg-blue-100 p-8 sm:col-span-3">
-      <h2 class="text-2xl font-bold">Konsulttjänster</h2>
+  shadow-lg
+  mb-16">
+    <div class="bg-white-800 rounded-xl bg-white p-8 flex flex-col gap-2">
+      <h2 class="text-2xl font-bold">Vilka utmaningar har ni?</h2>
       <p class="">
         Vi erbjuder konsulttjänster inom IT och verksamhetsutveckling. Vi
         hjälper dig att hitta rätt lösning för din verksamhet.
       </p>
+      <p class="">Du kan bland annat få hjälp med att:</p>
+      <ul class="list-disc list-inside">
+        <li>Utveckla och förbättra din verksamhet</li>
+        <li>Skapa en digital strategi</li>
+        <li>Genomföra inköp av nya system</li>
+        <li>Migrera data mellan system</li>
+        <li>Utveckla och förbättra dina processer</li>
+      </ul>
+      <h2 class="text-2xl font-bold">Löpande stöd och projektstöd</h2>
+      <p>
+        Vi erbjuder både löpande stöd och projektstöd. Vi kan hjälpa dig med
+        allt från mindre förändringar till större projekt.
+      </p>
+
       <a href="mailto:info@cabanossy.se?subject=Webbplats">
         <button
           class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg mt-2"
@@ -32,11 +62,5 @@ import { Image } from "astro:assets";
         </button>
       </a>
     </div>
-    <Image
-      src={Logo}
-      alt="logo"
-      class="p-8 bg-yellow-100 rounded-xl col-span-1"
-      width={700}
-    />
   </div>
 </BusinessAreaLayout>
