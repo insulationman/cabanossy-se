@@ -4,16 +4,18 @@ import PortraitBridge from "../assets/bridge-portrait.jpg";
 import { Image } from "astro:assets";
 ---
 
-<div
-  class="shrink bg-white lg:grid-cols-5 flex flex-col shadow-lg lg:grid rounded-xl"
->
-  <div class="p-5 md:p-8 sm:col-span-4">
-    <h2 class="text-3xl md:text-4xl font-bold text md:text-left mb-4">
-      Anpassad mjukvara
-    </h2>
-    <!-- <p class="pb-12">Vi bygger mjukvara som används internt och externt.</p> -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-      <div class="bg-gray-100 p-4 rounded-md">
+<div class="shrink bg-white shadow-lg lg:grid rounded-xl">
+  <div class="p-4 sm:col-span-4 flex flex-col gap-3">
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-4">
+      <Image
+        src={PortraitBridge}
+        alt="portrait"
+        class="rounded-md w-auto sm:w-1/5 md:w-auto"
+        width={500}
+        decoding="async"
+        loading="lazy"
+      />
+      <div class="bg-gray-100 p-4 rounded-md col-span-2">
         <h3 class="text-2xl font-bold text-center md:text-left pb-2">
           Interna verktyg
         </h3>
@@ -23,7 +25,7 @@ import { Image } from "astro:assets";
           leveransplanering eller orderhantering.
         </p>
       </div>
-      <div class="bg-gray-100 p-4 rounded-md">
+      <div class="bg-gray-100 p-4 rounded-md lg:col-span-2">
         <h3 class="text-2xl font-bold text-center md:text-left pb-2">
           Externa produkter
         </h3>
@@ -46,23 +48,5 @@ import { Image } from "astro:assets";
         </a>
       </div>
     </div>
-  </div>
-  <div
-    class="flex rounded-r-lg md:mb-0 order-first lg:order-none lg:col-span-1 lg:rounded-l-lg"
-  >
-    <Image
-      src={PortraitBridge}
-      alt="portrait"
-      class="w-1/2 lg:w-full rounded-tl-lg lg:rounded-none lg:rounded-r-lg"
-      width={700}
-      decoding="async"
-      loading="lazy"
-    />
-    <Image
-      src={Logo}
-      alt="logo"
-      class="w-1/2 p-8 lg:hidden bg-yellow-100 rounded-tr-lg"
-      width={700}
-    />
   </div>
 </div>
