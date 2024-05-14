@@ -13,11 +13,11 @@ const { title, description, buttontext, link, image } = Astro.props;
 
 <div class="bg-white flex rounded-xl shadow-lg">
   <div
-    class="z-10 rounded-l-xl flex flex-col justify-end py-4 bg-gradient-to-t to-blue-400 from-blue-300"
+    class="z-10 rounded-l-xl flex flex-col justify-end py-4 bg-gradient-to-t to-gray-400 from-gray-300"
   >
     <div class="w-8 flex justify-center">
       <span
-        class="-rotate-180 text-lg transform inline-block font-bold text-blue-800"
+        class="-rotate-180 text-lg transform inline-block font-bold text-gray-800"
         style="writing-mode: vertical-rl; ;">CASE WEBBPLATS</span
       >
     </div>
@@ -35,7 +35,7 @@ const { title, description, buttontext, link, image } = Astro.props;
         {description}
       </p>
       <a target="_blank" href={link} class="mt-auto">
-        <button class="bg-blue-200 p-1 px-3 rounded">
+        <button class="bg-gray-300 hover:bg-gray-400 p-1 px-3 rounded">
           {buttontext}
         </button>
       </a>
