@@ -10,58 +10,52 @@ import NPeople from "../assets/npeople.jpg";
   description="Konstulttjänster inom IT och verksamthetsutveckling."
 >
   <div class="xl:w-[1300px]
-p-2
-lg:p-0
-gap-2
-mb-2
-flex">
-    <Image
-      src={NPeople}
-      class="rounded-xl shadow-lg"
-      alt="People working in an office."
-      height={500}
-    />
-    <div
-      class="p-8 bg-yellow-100 rounded-xl w-full hidden lg:flex
-       items-center justify-center"
-    >
-      <Image src={Logo} alt="logo" />
-    </div>
-  </div>
-  <div class="xl:w-[1300px]
   p-2
   lg:p-0
   gap-4
+  grid
   mb-16">
-    <div
-      class="bg-white-800 rounded-xl bg-white p-8 shadow-lg flex flex-col gap-2"
-    >
-      <h2 class="text-2xl font-bold">Vilka utmaningar har ni?</h2>
-      <p class="">
-        Vi erbjuder konsulttjänster inom IT och verksamhetsutveckling. Vi
-        hjälper dig att hitta rätt lösning för din verksamhet.
-      </p>
-      <p class="">Du kan bland annat få hjälp med att:</p>
-      <ul class="list-disc list-inside">
-        <li>Utveckla och förbättra din verksamhet</li>
-        <li>Skapa en digital strategi</li>
-        <li>Genomföra inköp av nya system</li>
-        <li>Migrera data mellan system</li>
-        <li>Utveckla och förbättra dina processer</li>
-      </ul>
-      <h2 class="text-2xl font-bold">Löpande stöd och projektstöd</h2>
-      <p>
-        Vi erbjuder både löpande stöd och projektstöd. Vi kan hjälpa dig med
-        allt från mindre förändringar till större projekt.
-      </p>
-
-      <a href="mailto:info@cabanossy.se?subject=Webbplats">
-        <button
-          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg mt-2"
+    <div class="bg-white-800 rounded-xl bg-white p-4 shadow-lg">
+      <div class="gap-4
+    grid
+    lg:grid-cols-2">
+        <Image
+          src={NPeople}
+          class="rounded-md"
+          alt="People working in an office."
+          height={500}
+        />
+        <div
+          class="p-4 lg:p-8 bg-yellow-100 rounded-md w-full flex-col flex
+           items-center justify-center col-span-1"
         >
-          Kontakta oss
-        </button>
-      </a>
+          <div class="flex flex-col gap-2">
+            <h2 class="text-3xl sm:text-4xl font-bold">
+              Vilka utmaningar har ni?
+            </h2>
+            <p class="">
+              Vi erbjuder konsulttjänster inom IT och verksamhetsutveckling. Vi
+              hjälper dig att hitta rätt lösning för din verksamhet.
+            </p>
+            <p class="">Du kan bland annat få hjälp med att:</p>
+            <ul class="list-disc list-inside">
+              <li>Utveckla och förbättra din verksamhet</li>
+              <li>Skapa en digital strategi</li>
+              <li>Genomföra inköp av nya system</li>
+              <li>Migrera data mellan system</li>
+              <li>Utveckla och förbättra dina processer</li>
+            </ul>
+
+            <a href="mailto:info@cabanossy.se?subject=Webbplats">
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg mt-2"
+              >
+                Kontakta oss
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </BusinessAreaLayout>
