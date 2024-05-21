@@ -1,11 +1,13 @@
 ---
 import Logo from "../assets/Cabanossy-Snurra_nobg.svg";
 import { Image } from "astro:assets";
+import CloudPattern from "../assets/cloud-pattern-white.svg";
 ---
 
-<div class="gap-8 grid grid-cols-1 md:grid-cols-2">
+<div class="gap-8 grid grid-cols-1 md:grid-cols-2 bg-blue-100">
   <div
-    class="h-[500px] sm:h-[500px] col-span-2 flex flex-col justify-center items-center p-3 md:p-16 bg-gradient-to-tr from-blue-50 to-blue-100"
+    class="h-[500px] sm:h-[500px] col-span-2 flex flex-col justify-center items-center p-3 md:p-16 bg-gradient-to-tr from-blue-50 to-blue-100 bg-repeat"
+    style={{ backgroundImage: `url(${CloudPattern.src})` }}
   >
     <Image
       src={Logo}
