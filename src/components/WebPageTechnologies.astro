@@ -1,8 +1,8 @@
 ---
 import Image from "astro/components/Image.astro";
-import WordPress from "../assets/wordpress.png";
-import React from "../assets/react-logo.png";
-import Strapi from "../assets/strapi-logo.png";
+import WordPress from "../assets/wordpress.svg";
+import React from "../assets/react-logo.svg";
+import Strapi from "../assets/strapi-logo.svg";
 import AstroLogo from "../assets/astro-logo.png";
 import NetIcon from "../assets/net-logo.png";
 ---
@@ -19,7 +19,13 @@ import NetIcon from "../assets/net-logo.png";
   </div>
   <div class="grid grid-cols-1 gap-2">
     <div class="bg-gray-100 p-4 rounded-lg">
-      <Image src={WordPress} alt="WordPress" class="my-3" width={50} />
+      <Image
+        src={WordPress}
+        alt="WordPress"
+        class="my-3"
+        width={50}
+        quality={100}
+      />
       <h3 class="text-xl font-semibold mb-2">Wordpress</h3>
       <p class="text-base font-normal text-gray-500">
         Wordpress är ett populärt verktyg för att skapa webbplatser. Cirka
@@ -29,8 +35,8 @@ import NetIcon from "../assets/net-logo.png";
     </div>
     <div class="bg-gray-100 p-4 rounded-lg">
       <div class="flex items-center my-3 gap-2">
-        <Image src={React} alt="React" class="" height={50} />
-        <Image src={Strapi} alt="Strapi" class="" height={30} />
+        <Image src={React} alt="React" class="" height={50} quality={100} />
+        <Image src={Strapi} alt="Strapi" class="" height={30} quality={100} />
       </div>
       <h3 class="text-xl font-semibold mb-2">React + CMS</h3>
       <p class="text-base font-normal text-gray-500">
