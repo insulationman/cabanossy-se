@@ -5,64 +5,77 @@ import React from "../assets/react-logo.svg";
 import Strapi from "../assets/strapi-logo.svg";
 import AstroLogo from "../assets/astro-logo.png";
 import NetIcon from "../assets/net-logo.png";
+import PortraitBridge from "../assets/bridge-portrait.jpg";
 ---
 
-<div class="rounded-xl shadow-lg bg-white gap-6 p-4 min-h-0">
-  <div class="py-4 text-gray-900 md:pb-10 p-4">
-    <h2 class="text-3xl font-semibold text-gray-900 dark:text-white mb-2">
-      Teknikval
-    </h2>
-    <p>
-      Som webbyrå arbetar vi med de senaste teknikerna för att skapa webbplatser
-      som är snabba, säkra och användarvänliga.
-    </p>
-  </div>
-  <div class="grid grid-cols-1 gap-2">
-    <div class="bg-gray-100 p-4 rounded-lg">
-      <Image
-        src={WordPress}
-        alt="WordPress"
-        class="my-3"
-        width={50}
-        quality={100}
-      />
-      <h3 class="text-xl font-semibold mb-2">Wordpress</h3>
-      <p class="text-base font-normal text-gray-500">
-        Wordpress är ett populärt verktyg för att skapa webbplatser. Cirka
-        hälften av alla webbplatser på internet är byggda med Wordpress. Nästan
-        aldrig fel val.
+<div
+  class="rounded-xl shadow-lg bg-white gap-4 p-4 min-h-0 grid lg:grid-cols-5"
+>
+  <div class="col-span-3 flex flex-col">
+    <div
+      class="py-4 text-gray-900 md:pb-10 p-4 grow flex flex-col justify-center"
+    >
+      <h2 class="text-3xl font-semibold text-gray-900 dark:text-white mb-2">
+        Teknik som passar
+      </h2>
+      <p>
+        Vi arbetar med de senaste teknikerna för att skapa webbplatser som är
+        snabba, säkra och användarvänliga.
       </p>
     </div>
-    <div class="bg-gray-100 p-4 rounded-lg">
-      <div class="flex items-center my-3 gap-2">
-        <Image src={React} alt="React" class="" height={50} quality={100} />
-        <Image src={Strapi} alt="Strapi" class="" height={30} quality={100} />
+    <div class="grid md:grid-cols-2 gap-2">
+      <div class="bg-gray-100 p-4 rounded-lg transform">
+        <Image
+          src={WordPress}
+          alt="WordPress"
+          class="my-3"
+          width={50}
+          quality={100}
+        />
+        <h3 class="text-xl font-semibold mb-2">Wordpress</h3>
+        <p class="text-base font-normal text-gray-500">
+          Wordpress är ett populärt verktyg för att skapa webbplatser. Cirka
+          hälften av alla webbplatser på internet är byggda med Wordpress.
+          Nästan aldrig fel val.
+        </p>
       </div>
-      <h3 class="text-xl font-semibold mb-2">React + CMS</h3>
-      <p class="text-base font-normal text-gray-500">
-        React är ett ramverk för att skapa webbplatser. Vi använder ofta React
-        tillsammans med ett CMS för kunder som vill ha en skräddarsydd lösning.
-      </p>
-    </div>
-    <div class="bg-gray-100 p-4 rounded-lg">
-      <Image src={AstroLogo} alt="Astro" class="my-3" width={50} />
-      <h3 class="text-xl font-semibold mb-2">Andra ramverk</h3>
-      <p class="text-base font-normal text-gray-500">
-        Vi arbetar med andra ramverk när det passar kundens behov. Till exempel
-        är denna sida byggd med Astro - ett statiskt webbverktyg lätt kombinerat
-        med CMS som Strapi.
-      </p>
-    </div>
-    <div class="bg-gray-100 p-4 rounded-lg">
-      <Image src={NetIcon} alt="Astro" class="my-3" width={50} />
-      <h3 class="text-xl font-semibold mb-2">Webapplikationer</h3>
-      <p class="text-base font-normal text-gray-500">
-        Vi bygger webbapplikationer i .NET och andra ramverk. Detta är mer än en
-        webbplats och kan innehålla mer avancerad funktionalitet.
-      </p>
-      <a href="/mjukvara" class="text-base hover:underline text-gray-500"
-        >Läs mer om vår mjukvaruutveckling
-      </a>
+      <div class="bg-gray-100 p-4 rounded-lg">
+        <div class="flex items-center my-3 gap-2">
+          <Image src={React} alt="React" class="" height={50} quality={100} />
+          <Image src={Strapi} alt="Strapi" class="" height={30} quality={100} />
+        </div>
+        <h3 class="text-xl font-semibold mb-2">React + CMS</h3>
+        <p class="text-base font-normal text-gray-500">
+          React är ett ramverk för att skapa webbplatser. Vi använder ofta React
+          tillsammans med ett CMS för kunder som vill ha en skräddarsydd
+          lösning.
+        </p>
+      </div>
+      <div class="bg-gray-100 p-4 rounded-lg">
+        <Image src={AstroLogo} alt="Astro" class="my-3" width={50} />
+        <h3 class="text-xl font-semibold mb-2">Andra ramverk</h3>
+        <p class="text-base font-normal text-gray-500">
+          Vi arbetar med andra ramverk när det passar kundens behov. Till
+          exempel är denna sida byggd med Astro - ett statiskt webbverktyg lätt
+          kombinerat med CMS som Strapi.
+        </p>
+      </div>
+      <div class="bg-gray-100 p-4 rounded-lg">
+        <Image src={NetIcon} alt="Astro" class="my-3" width={50} />
+        <h3 class="text-xl font-semibold mb-2">Webapplikationer</h3>
+        <p class="text-base font-normal text-gray-500">
+          Vi bygger webbapplikationer i .NET och andra ramverk. Detta är mer än
+          en webbplats och kan innehålla mer avancerad funktionalitet.
+        </p>
+        <a href="/mjukvara" class="text-base hover:underline text-gray-500"
+          >Läs mer om vår mjukvaruutveckling
+        </a>
+      </div>
     </div>
   </div>
+  <Image
+    src={PortraitBridge}
+    alt="Bridge"
+    class="rounded-md col-span-2 hidden lg:block self-end"
+  />
 </div>
