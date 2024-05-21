@@ -5,6 +5,7 @@ import BusinessAreaLayout from "../layouts/BusinessAreaLayout.astro";
 import Image from "astro/components/Image.astro";
 import Website from "../assets/website.svg";
 import Together from "../assets/together.svg";
+import WebpageProcessCard from "../components/WebpageProcessCard.astro";
 ---
 
 <BusinessAreaLayout
@@ -48,27 +49,9 @@ import Together from "../assets/together.svg";
       </div>
     </div>
   </div>
-  <div class="xl:w-[1300px] p-2 lg:p-0">
-    <WebPageTypesMosaic />
-  </div>
-  <div class="xl:w-[900px] p-2 lg:p-0">
-    <div class="p-8 bg-white rounded-xl shadow-xl mb-16">
-      <h1 class="text-4xl font-bold mb-4">Lyckade webbplatser</h1>
-      <p class="mb-8">
-        Vi har lärt oss vad som fungerar när man skapar webbplatser. Här är
-        några punkter vi är intresserade av:
-      </p>
-      <ul class="flex flex-col gap-4 mb-4">
-        <li>👍 Det viktigaste! Hur ser er affär ut?</li>
-        <li>🎯 Var vill ni uppnå med er webbplats?</li>
-        <li>⛭ Vilken typ av funkionalitet behöver ni, och varför?</li>
-        <li>🎨 Vilka behov har ni av grafisk design?</li>
-      </ul>
-      <p>
-        Om du inte redan vet svaren på dessa frågor så hjälper vi dig gärna. Det
-        viktigaste för oss är resultatet.
-      </p>
-    </div>
+
+  <div class="xl:w-[1300px] p-2 lg:p-0 mb-16">
+    <WebpageProcessCard />
   </div>
   <div class="p-2 lg:p-0 xl:w-[1300px]">
     <OptimizedCard />
