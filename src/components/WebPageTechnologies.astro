@@ -1,0 +1,50 @@
+---
+import Image from "astro/components/Image.astro";
+import WordPress from "../assets/wordpress.png";
+import React from "../assets/react-logo.png";
+import Strapi from "../assets/strapi-logo.png";
+import AstroLogo from "../assets/astro-logo.png";
+---
+
+<div class="rounded-xl shadow-lg bg-white gap-6 p-4 min-h-0">
+  <div class="py-4 text-gray-900 md:pb-10 p-4">
+    <h2 class="text-3xl font-semibold text-gray-900 dark:text-white mb-2">
+      Teknikval
+    </h2>
+    <p>
+      Som webbyrå arbetar vi med de senaste teknikerna för att skapa webbplatser
+      som är snabba, säkra och användarvänliga.
+    </p>
+  </div>
+  <div class="grid lg:grid-cols-2 gap-2">
+    <div class="bg-gray-100 p-4 rounded-lg">
+      <Image src={WordPress} alt="WordPress" class="my-3" width={50} />
+      <h3 class="text-xl font-semibold mb-2">Wordpress</h3>
+      <p class="text-base font-normal text-gray-500">
+        Wordpress är ett populärt verktyg för att skapa webbplatser. Cirka
+        hälften av alla webbplatser på internet är byggda med Wordpress. Nästan
+        aldrig fel val.
+      </p>
+    </div>
+    <div class="bg-gray-100 p-4 rounded-lg">
+      <div class="flex items-center my-3 gap-2">
+        <Image src={React} alt="React" class="" height={50} />
+        <Image src={Strapi} alt="Strapi" class="" height={30} />
+      </div>
+      <h3 class="text-xl font-semibold mb-2">React + CMS</h3>
+      <p class="text-base font-normal text-gray-500">
+        React är ett ramverk för att skapa webbplatser. Vi använder ofta React
+        tillsammans med ett CMS för kunder som vill ha en skräddarsydd lösning.
+      </p>
+    </div>
+    <div class="bg-gray-100 p-4 rounded-lg">
+      <Image src={AstroLogo} alt="Astro" class="my-3" width={50} />
+      <h3 class="text-xl font-semibold mb-2">Andra ramverk</h3>
+      <p class="text-base font-normal text-gray-500">
+        Vi arbetar med andra ramverk när det passar kundens behov. Till exempel
+        är denna sida byggd med Astro - ett statiskt webbverktyg lätt kombinerat
+        med CMS som Strapi.
+      </p>
+    </div>
+  </div>
+</div>
