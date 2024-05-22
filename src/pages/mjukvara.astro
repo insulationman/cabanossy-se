@@ -6,6 +6,7 @@ import Image from "astro/components/Image.astro";
 import Team from "../assets/team.svg";
 import Office from "../assets/office.svg";
 import Deliveries from "../assets/deliveries.svg";
+import SoftwareTypeCard from "../components/SoftwareTypeCard.astro";
 ---
 
 <BusinessAreaLayout
@@ -13,88 +14,20 @@ import Deliveries from "../assets/deliveries.svg";
   description="Vi bygger mjukvara för interna och externa produkter."
 >
   <div class="xl:w-[1300px] p-2 lg:p-0 gap-4 mb-16 grid md:grid-cols-2">
-    <div class="bg-white-800 rounded-xl bg-white p-8 shadow-xl">
-      <div class="flex flex-col md:grid grid-cols-4 gap-4">
-        <div class="grow col-span-3 flex flex-col gap-2">
-          <h2 class="text-3xl font-bold">För startups</h2>
-          <p class="">
-            Vi har erfarenhet av att bygga produkter som är skalbara och som kan
-            skapa tillväxt för startups. Vi hjälper er att bygga en MVP och att
-            iterera på produkten för att skapa en produkt som användarna älskar.
-          </p>
-          <p>
-            Vi erbjuder bland annat hjälp med prototyping, design, testning och
-            utveckling.
-          </p>
-          <a href="mailto:info@cabanossy.se?subject=Webbplats">
-            <button
-              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg mt-2"
-            >
-              Kontakta oss
-            </button>
-          </a>
-        </div>
-        <Image
-          src={Team}
-          alt="Team"
-          class="order-first md:order-none"
-          width={150}
-        />
-      </div>
-    </div>
-    <div class="bg-white-800 rounded-xl bg-white p-8 shadow-xl">
-      <div class="flex flex-col md:grid grid-cols-4 gap-4">
-        <div class="grow col-span-3 flex flex-col gap-2">
-          <h2 class="text-3xl font-bold">Intern mjukvara</h2>
-          <p class="">
-            Vi bygger interna verktyg för att effektivisera arbetsflöden. Vi
-            hjälper er att bygga verktyg som kan automatisera uppgifter och
-            skapa en bättre arbetsmiljö för era anställda.
-          </p>
-          <p class="">
-            Med oss som partner får ni ett nära samarbete där vårt mål är ett
-            positivt resultat för människor och företag.
-          </p>
-          <a href="mailto:info@cabanossy.se?subject=Webbplats">
-            <button
-              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg mt-2"
-            >
-              Kontakta oss
-            </button>
-          </a>
-        </div>
-        <Image
-          src={Office}
-          alt="Office"
-          class="order-first md:order-none"
-          width={150}
-        />
-      </div>
-    </div>
-    <div class="bg-white-800 rounded-xl bg-white p-8 shadow-xl">
-      <div class="flex flex-col md:grid grid-cols-4 gap-4">
-        <div class="grow col-span-3 flex flex-col gap-2">
-          <h2 class="text-3xl font-bold">Produktutveckling</h2>
-          <p class="">
-            Vi hjälper er att bygga produkter som är skalbara och som kan växa
-            med er verksamhet. Vi har erfarenhet av att bygga produkter för
-            slutanvändare med höga krav på prestanda och användarupplevelse.
-          </p>
-          <a href="mailto:info@cabanossy.se?subject=Webbplats">
-            <button
-              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg mt-2"
-            >
-              Kontakta oss
-            </button>
-          </a>
-        </div>
-        <Image
-          src={Deliveries}
-          alt="Deliveries"
-          class="order-first md:order-none"
-          width={150}
-        />
-      </div>
-    </div>
+    <SoftwareTypeCard
+      title="För Startups"
+      text="Vi har erfarenhet av att bygga produkter som är skalbara och som kan skapa tillväxt för startups. Vi hjälper er att bygga en MVP och att iterera på produkten för att skapa en produkt som användarna älskar. Vi erbjuder bland annat hjälp med prototyping, design, testning och utveckling."
+      image={Team}
+    />
+    <SoftwareTypeCard
+      title="Intern mjukvara"
+      text="Vi bygger interna verktyg för att effektivisera arbetsflöden. Vi hjälper er att bygga verktyg som kan automatisera uppgifter och skapa en bättre arbetsmiljö för era anställda. Med oss som partner får ni ett nära samarbete där vårt mål är ett positivt resultat för människor och företag."
+      image={Office}
+    />
+    <SoftwareTypeCard
+      title="Produktutveckling"
+      text="Vi hjälper er att bygga produkter som är skalbara och som kan växa med er verksamhet. Vi har erfarenhet av att bygga produkter för slutanvändare med höga krav på prestanda och användarupplevelse."
+      image={Deliveries}
+    />
   </div>
 </BusinessAreaLayout>
