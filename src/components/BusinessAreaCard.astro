@@ -17,8 +17,12 @@ const { title, iconName, href, image } = Astro.props;
   href={href}
 >
   <div class="flex flex-col items-start gap-3 p-6 grow relative">
-    <Image src={image} alt={title + " icon"} class="w-full h-32" />
-
+    <Image
+      src={image}
+      alt={title + " icon"}
+      class="w-full h-32"
+      loading={"eager"}
+    />
     <h2 class="text-2xl font-bold">
       {title}
     </h2>
