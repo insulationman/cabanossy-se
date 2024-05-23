@@ -6,6 +6,8 @@ interface Props {
   description: string;
 }
 
+import CloudPattern from "../assets/grain.svg";
+
 const { title, description } = Astro.props;
 ---
 
@@ -117,7 +119,10 @@ const { title, description } = Astro.props;
       rel="preconnect"
     />
   </head>
-  <body class="bg-blue-200">
+  <body
+    class="bg-blue-200"
+    style={{ backgroundImage: `url(${CloudPattern.src})` }}
+  >
     <slot />
     <Footer />
   </body>
