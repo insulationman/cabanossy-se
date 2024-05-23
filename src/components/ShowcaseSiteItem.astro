@@ -7,11 +7,12 @@ interface Props {
   image: ImageMetadata;
 }
 import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
 
 const { title, description, buttontext, link, image } = Astro.props;
 ---
 
-<div class="bg-white flex rounded-xl shadow-lg">
+<div class="bg-white flex rounded-xl shadow-lg relative">
   <div
     class="z-10 rounded-l-xl flex flex-col justify-end py-4 bg-gradient-to-t to-neutral-200 from-neutral-300"
   >
@@ -34,11 +35,15 @@ const { title, description, buttontext, link, image } = Astro.props;
       <p class="mb-4">
         {description}
       </p>
-      <a target="_blank" href={link} class="mt-auto">
-        <button class="bg-gray-300 hover:bg-gray-400 p-1 px-3 rounded">
-          {buttontext}
-        </button>
-      </a>
     </div>
   </div>
+  <a
+    href={link}
+    referrerpolicy="no-referrer"
+    target="_blank"
+    title="Öppnar sidan för {title} i ny flik"
+    class="absolute right-5 top-5 rounded-md cursor-pointer hover:bg-neutral-100"
+  >
+    <Icon name="mdi:open-in-new" class="w-6 h-6 text-neutral-500" />
+  </a>
 </div>
