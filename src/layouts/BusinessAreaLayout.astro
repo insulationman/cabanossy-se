@@ -15,7 +15,7 @@ const { title, description } = Astro.props;
 <Layout title={"Cabanossy - " + title} description={description}>
   <div class="flex flex-col">
     <div
-      class="h-[300px] flex flex-col items-center justify-center gap-4 p-2 py-12 xl:px-0 bg-gray-100 bg-repeat"
+      class="h-[350px] flex flex-col items-center justify-center gap-4 p-2 py-12 xl:px-0 bg-gray-100 bg-repeat"
       style={{ backgroundImage: `url(${CloudPattern.src})` }}
     >
       <div class="flex flex-col items-center gap-8">
@@ -31,7 +31,7 @@ const { title, description } = Astro.props;
         </h1>
       </div>
     </div>
-    <div class="xl:w-[1300px] self-center py-16">
+    <div class="xl:w-[1300px] self-center pb-16">
       <slot />
     </div>
   </div>
