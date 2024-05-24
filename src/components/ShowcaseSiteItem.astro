@@ -12,37 +12,27 @@ import { Icon } from "astro-icon/components";
 const { title, description, buttontext, link, image } = Astro.props;
 ---
 
-<div class="bg-white flex rounded-xl shadow-lg relative">
-  <div
-    class="z-10 rounded-l-xl flex flex-col justify-end py-4 bg-gradient-to-t to-neutral-200 from-neutral-300"
-  >
-    <div class="w-8 flex justify-center">
-      <span
-        class="-rotate-180 text-lg transform inline-block font-bold text-gray-800"
-        style="writing-mode: vertical-rl; ;">CASE: WEBBPLATS</span
-      >
-    </div>
-  </div>
+<div class="bg-white flex rounded-xl shadow-lg relative p-6 gap-5">
   <!-- <div class="text-white -rotate-90 text-lg">WEBPLATS</div> -->
-  <div class="flex flex-col p-4 pr-8">
-    <div class="flex flex-col items-center h-32 justify-center">
-      <Image src={image} class="rounded-lg" width="100" alt={title + " logo"} />
-    </div>
-    <div class="grow flex flex-col">
-      <h1 class="text-2xl font-bold">
-        {title}
-      </h1>
-      <p class="mb-4">
-        {description}
-      </p>
-    </div>
+
+  <div class="flex flex-col items-center justify-center grow">
+    <Image src={image} class="rounded-lg" width="250" alt={title + " logo"} />
   </div>
+  <div class="grow flex flex-col">
+    <h1 class="text-2xl font-bold">
+      {title}
+    </h1>
+    <p>
+      {description}
+    </p>
+  </div>
+
   <a
     href={link}
     referrerpolicy="no-referrer"
     target="_blank"
     title="Öppnar sidan för {title} i ny flik"
-    class="absolute right-5 top-5 rounded-md cursor-pointer hover:bg-neutral-100"
+    class="absolute right-6 top-6 rounded-md cursor-pointer hover:bg-neutral-100"
   >
     <Icon name="mdi:open-in-new" class="w-6 h-6 text-neutral-500" />
   </a>
