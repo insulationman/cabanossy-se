@@ -9,55 +9,60 @@ import Conversation from "../assets/conversation.svg";
 import Website from "../assets/website.svg";
 ---
 
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
-  <BusinessAreaCard
-    title="Webbplatser"
-    iconName="mdi:code"
-    href="/webb"
-    image={Website}
-  >
-    <p class="text-slate-700">
-      Vi arbetar direkt med dig som behöver hjälp med egna webbplatser och som
-      partner för att leverera webbplatser till dina kunder. Detta passar:
-    </p>
-    <div class="flex items-start gap-1 flex-wrap">
-      <BusinessAreaBadg title="Företagshemsidor" />
-      <BusinessAreaBadg title="E-handel" />
-      <BusinessAreaBadg title="Varumärken" />
-    </div>
-  </BusinessAreaCard>
-  <BusinessAreaCard
-    title="Anpassad mjukvara"
-    iconName="mdi:computer"
-    href="/mjukvara"
-    image={PairProgramming}
-  >
-    <p class="text-slate-700">
-      Vi skapar mjukvara som är anpassad för olika verksamheter. Det kan vara
-      allt från en enkel kunddatabas till Saas-lösningar för hela branscher.
-      Detta passar:
-    </p>
-    <div class="flex items-start gap-1 flex-wrap">
-      <BusinessAreaBadg title="Startups" />
-      <BusinessAreaBadg title="Interna verktyg" />
-      <BusinessAreaBadg title="Integrationer" />
-    </div>
-  </BusinessAreaCard>
-  <BusinessAreaCard
-    title="Konsult"
-    iconName="mdi:account"
-    href="/konsult"
-    image={Conversation}
-  >
-    <p class="text-slate-700">
-      Vi erbjuder stöd när ditt företag utvecklas. Vår expetis gör att ditt
-      företag kan fokusera på det ni är bäst på. Vi kan bland annat ge stöd
-      inom:
-    </p>
-    <div class="flex items-start gap-1 flex-wrap">
-      <BusinessAreaBadg title="Verksamhetsutveckling" />
-      <BusinessAreaBadg title="Inköp" />
-      <BusinessAreaBadg title="Systemmigrering" />
-    </div>
-  </BusinessAreaCard>
+<div>
+  <h2 class="text-2xl mb-8 text-center text-neutral-500 font-light">
+    Våra affärsområden
+  </h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+    <BusinessAreaCard
+      title="Webbplatser"
+      iconName="mdi:code"
+      href="/webb"
+      image={Website}
+    >
+      <p class="text-slate-700">
+        Vi arbetar direkt med dig som behöver hjälp med egna webbplatser och som
+        partner för att leverera webbplatser till dina kunder. Detta passar:
+      </p>
+      <div class="flex items-start gap-1 flex-wrap">
+        <BusinessAreaBadg title="Företagshemsidor" />
+        <BusinessAreaBadg title="E-handel" />
+        <BusinessAreaBadg title="Varumärken" />
+      </div>
+    </BusinessAreaCard>
+    <BusinessAreaCard
+      title="Anpassad mjukvara"
+      iconName="mdi:computer"
+      href="/mjukvara"
+      image={PairProgramming}
+    >
+      <p class="text-slate-700">
+        Vi skapar mjukvara som är anpassad för olika verksamheter. Det kan vara
+        allt från en enkel kunddatabas till Saas-lösningar för hela branscher.
+        Detta passar:
+      </p>
+      <div class="flex items-start gap-1 flex-wrap">
+        <BusinessAreaBadg title="Startups" />
+        <BusinessAreaBadg title="Interna verktyg" />
+        <BusinessAreaBadg title="Integrationer" />
+      </div>
+    </BusinessAreaCard>
+    <BusinessAreaCard
+      title="Konsult"
+      iconName="mdi:account"
+      href="/konsult"
+      image={Conversation}
+    >
+      <p class="text-slate-700">
+        Vi erbjuder stöd när ditt företag utvecklas. Vår expetis gör att ditt
+        företag kan fokusera på det ni är bäst på. Vi kan bland annat ge stöd
+        inom:
+      </p>
+      <div class="flex items-start gap-1 flex-wrap">
+        <BusinessAreaBadg title="Verksamhetsutveckling" />
+        <BusinessAreaBadg title="Inköp" />
+        <BusinessAreaBadg title="Systemmigrering" />
+      </div>
+    </BusinessAreaCard>
+  </div>
 </div>
