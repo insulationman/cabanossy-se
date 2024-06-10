@@ -10,6 +10,4 @@ tags:
 author: adam-liljenberg
 ---
 
-# Hello World
-
 This is a test article.
