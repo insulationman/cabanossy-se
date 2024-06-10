@@ -1,5 +1,5 @@
 ---
-title: Test
+title: How to create a new article
 description: This is a test article.
 date: 2021-08-01
 tags:
@@ -7,8 +7,9 @@ tags:
   - article
   - hello
   - world
+author: adam-liljenberg
 ---
 
-## Hello World
+# Hello World
 
 This is a test article.
