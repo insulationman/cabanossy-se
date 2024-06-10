@@ -1,9 +1,13 @@
 ---
 import { Image } from "astro:assets";
 import PageSpeedLogo from "../assets/pagespeedlogo.png";
+import CloudPattern from "../assets/grain.svg";
 ---
 
-<footer class="w-full bg-blue-900 py-24 flex flex-col items-center">
+<footer
+  class="w-full bg-blue-900 py-24 flex flex-col items-center bg-repeat"
+  style={{ backgroundImage: `url(${CloudPattern.src})` }}
+>
   <div class="grid grid-cols-1 md:grid-cols-4 text-white xl:w-[1300px]">
     <div class="p-4">
       <h2 class="text-2xl">Kontakt</h2>

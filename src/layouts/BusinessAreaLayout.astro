@@ -1,7 +1,8 @@
 ---
 import Layout from "./Layout.astro";
-import Logo from "../assets/Cabanossy-Snurra_nobg.svg";
+import Logo from "../assets/Cabanossy-Snurra_nobg_lightblue.svg";
 import { Image } from "astro:assets";
+import CloudPattern from "../assets/grain.svg";
 
 interface Props {
   title: string;
@@ -14,22 +15,23 @@ const { title, description } = Astro.props;
 <Layout title={"Cabanossy - " + title} description={description}>
   <div class="flex flex-col">
     <div
-      class="h-[400px] flex flex-col items-center justify-center gap-4 p-2 py-12 xl:px-0 bg-gradient-to-tr to-blue-400 from-blue-300"
+      class="h-[350px] flex flex-col items-center justify-center gap-4 p-2 py-12 xl:px-0 bg-gray-100 bg-repeat"
+      style={{ backgroundImage: `url(${CloudPattern.src})` }}
     >
       <div class="flex flex-col items-center gap-8">
         <a href="/">
           <Image
             src={Logo}
             alt="Cabanossy Snurra logo"
-            class={"h-24 w-24 md:h-32 md:w-32 shrink rounded-full bg-yellow-200"}
+            class={"h-24 w-24 md:h-32 md:w-32 shrink rounded-full bg-blue-900 hover:shadow-lg transition-shadow "}
           />
         </a>
-        <h1 class="text-5xl font-bold text-center text-gray-900">
+        <h1 class="text-5xl font-bold text-center">
           {title}
         </h1>
       </div>
     </div>
-    <div class="xl:w-[1300px] self-center py-16">
+    <div class="xl:w-[1300px] self-center pb-16">
       <slot />
     </div>
   </div>

@@ -6,6 +6,8 @@ interface Props {
   description: string;
 }
 
+import CloudPattern from "../assets/grain.svg";
+
 const { title, description } = Astro.props;
 ---
 
@@ -15,7 +17,8 @@ const { title, description } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
-    <meta name="theme-color" content="#93c5fd" />
+    <meta name="theme-color" content="#d1d5db" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
 
     <link
       rel="apple-touch-icon-precomposed"
@@ -117,7 +120,10 @@ const { title, description } = Astro.props;
       rel="preconnect"
     />
   </head>
-  <body class="bg-blue-200">
+  <body
+    class="bg-gray-100 text-slate-800"
+    style={{ backgroundImage: `url(${CloudPattern.src})` }}
+  >
     <slot />
     <Footer />
   </body>

@@ -1,0 +1,22 @@
+---
+import Image from "astro/components/Image.astro";
+import IsolLogo from "../assets/isol_text.svg";
+import { Icon } from "astro-icon/components";
+---
+
+<div
+  class="bg-white shadow-lg rounded-xl p-8 flex flex-col justify-center items-center min-h-[500px]"
+>
+  <Image src={IsolLogo} alt="Isol Logo" class="mx-auto pb-8" />
+  <h2 class="text-center">
+    Läs mer om vår plattform för Sveriges isolerare.
+    <a
+      href="https://isol.se"
+      target="_blank"
+      class="text-neutral-500 hover:text-neutral-800"
+      title="Besök Isol.se och läs mer om plattformen"
+    >
+      <Icon name="mdi:open-in-new" class="inline" />
+    </a>
+  </h2>
+</div>

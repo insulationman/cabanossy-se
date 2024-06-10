@@ -6,111 +6,70 @@ import Image from "astro/components/Image.astro";
 import Team from "../assets/team.svg";
 import Office from "../assets/office.svg";
 import Deliveries from "../assets/deliveries.svg";
+import SoftwareTypeCard from "../components/SoftwareTypeCard.astro";
+import WebpageProcessStep from "../components/WebpageProcessStep.astro";
+import StartupMaturityStep from "../components/StartupMaturityStep.astro";
 ---
 
 <BusinessAreaLayout
   title="Mjukvara"
   description="Vi bygger mjukvara för interna och externa produkter."
 >
-  <div class="xl:w-[1300px] p-2 lg:p-0 gap-4 mb-16 grid">
-    <code
-      class="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6"
-    >
-      <span class="flex gap-4">
-        <span class="whitespace-pre text-wrap"
-          >{
-            `<div>
-  <h1>Welcome to Cabanossy!</h1>
-  <p>We're happy to see you.</p>
-  <p class='text-small'>We look forward to getting in touch.</p>
-</div>`
-          }
-        </span>
-      </span>
-    </code>
-  </div>
   <div class="xl:w-[1300px] p-2 lg:p-0 gap-4 mb-16 grid md:grid-cols-2">
-    <div class="bg-white-800 rounded-xl bg-white p-8">
-      <div class="flex flex-col md:grid grid-cols-4 gap-4">
-        <div class="grow col-span-3 flex flex-col gap-2">
-          <h2 class="text-3xl font-bold">För startups</h2>
-          <p class="">
-            Vi har erfarenhet av att bygga produkter som är skalbara och som kan
-            skapa tillväxt för startups. Vi hjälper er att bygga en MVP och att
-            iterera på produkten för att skapa en produkt som användarna älskar.
-          </p>
-          <p>
-            Vi erbjuder bland annat hjälp med prototyping, design, testning och
-            utveckling.
-          </p>
-          <a href="mailto:info@cabanossy.se?subject=Webbplats">
-            <button
-              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg mt-2"
-            >
-              Kontakta oss
-            </button>
-          </a>
-        </div>
-        <Image
-          src={Team}
-          alt="Team"
-          class="order-first md:order-none"
-          width={150}
-        />
+    <SoftwareTypeCard
+      title="För Startups"
+      text="Vi har erfarenhet av att bygga produkter som är skalbara och som kan skapa tillväxt för startups. Vi hjälper er att bygga en MVP och att iterera på produkten för att skapa en produkt som användarna älskar. Vi erbjuder bland annat hjälp med prototyping, design, testning och utveckling."
+      image={Team}
+    />
+    <SoftwareTypeCard
+      title="Intern mjukvara"
+      text="Vi bygger interna verktyg för att effektivisera arbetsflöden. Vi hjälper er att bygga verktyg som kan automatisera uppgifter och skapa en bättre arbetsmiljö för era anställda. Med oss som partner får ni ett nära samarbete där vårt mål är ett positivt resultat för människor och företag."
+      image={Office}
+    />
+    <SoftwareTypeCard
+      title="Produktutveckling"
+      text="Vi hjälper er att bygga produkter som är skalbara och som kan växa med er verksamhet. Vi har erfarenhet av att bygga produkter för slutanvändare med höga krav på prestanda och användarupplevelse."
+      image={Deliveries}
+    />
+  </div>
+  <div class="xl:w-[1300px] p-2 lg:p-0 gap-4 mb-16">
+    <div class="rounded-xl shadow-lg bg-white gap-6 p-8">
+      <div class="py-4 md:text-center text-gray-900 md:pb-10 mb-8">
+        <h2 class="text-3xl font-semibold text-gray-900 dark:text-white mb-2">
+          Vart befinner sig ert Startup?
+        </h2>
+        <p>
+          Vi erbjuder olika expertis beroende på vart ni befinner er i resan
+        </p>
       </div>
-    </div>
-    <div class="bg-white-800 rounded-xl bg-white p-8">
-      <div class="flex flex-col md:grid grid-cols-4 gap-4">
-        <div class="grow col-span-3 flex flex-col gap-2">
-          <h2 class="text-3xl font-bold">Intern mjukvara</h2>
-          <p class="">
-            Vi bygger interna verktyg för att effektivisera arbetsflöden. Vi
-            hjälper er att bygga verktyg som kan automatisera uppgifter och
-            skapa en bättre arbetsmiljö för era anställda.
-          </p>
-          <p class="">
-            Med oss som partner får ni ett nära samarbete där vårt mål är ett
-            positivt resultat för människor och företag.
-          </p>
-          <a href="mailto:info@cabanossy.se?subject=Webbplats">
-            <button
-              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg mt-2"
-            >
-              Kontakta oss
-            </button>
-          </a>
-        </div>
-        <Image
-          src={Office}
-          alt="Office"
-          class="order-first md:order-none"
-          width={150}
+      <ol class="grid grid-cols-1 md:grid-cols-3 md:p-4">
+        <StartupMaturityStep
+          title="Gör rätt från början"
+          subtitle="MVP, prototyp, teknikval"
+          description="Vi ger er stöd i arbetet med er prototyp och hjälper er att skapa och iterera på er MVP. Genom att arbeta med en erfaren partner behöver ni inte göra om hela produkten när ni hittat rätt."
+          icontext="Nykomling"
         />
-      </div>
-    </div>
-    <div class="bg-white-800 rounded-xl bg-white p-8">
-      <div class="flex flex-col md:grid grid-cols-4 gap-4">
-        <div class="grow col-span-3 flex flex-col gap-2">
-          <h2 class="text-3xl font-bold">Produktutveckling</h2>
-          <p class="">
-            Vi hjälper er att bygga produkter som är skalbara och som kan växa
-            med er verksamhet. Vi har erfarenhet av att bygga produkter för
-            slutanvändare med höga krav på prestanda och användarupplevelse.
-          </p>
-          <a href="mailto:info@cabanossy.se?subject=Webbplats">
-            <button
-              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg mt-2"
-            >
-              Kontakta oss
-            </button>
-          </a>
-        </div>
-        <Image
-          src={Deliveries}
-          alt="Deliveries"
-          class="order-first md:order-none"
-          width={150}
+        <StartupMaturityStep
+          title="Hantera tillväxt"
+          subtitle="Skalbarhet, prestanda, säkerhet"
+          description="När det är tydligt att produkten är på rätt väg hjälper vi er att skala och att bli av med teknisk skuld. På så sätt kan ni fokusera på att skapa värde för era användare och växa hållbart."
+          icontext="Uppstickare"
         />
+        <StartupMaturityStep
+          title="Nya krafter och idéer"
+          subtitle="Interna processer, representabla produkter"
+          description="När ni ser er själva som ett etablerat företag ställs ni inför nya utmaningar. Vi hjälper er att skapa interna processer och att skapa produkter som representerar er vision."
+          icontext="Etablerad"
+        />
+      </ol>
+      <div class="text-center py-6 md:pt-12">
+        <a href="mailto:info@cabanossy.se?subject=Webbplats">
+          <button
+            class="bg-neutral-200 hover:bg-neutral-300 font-bold py-2 px-3 rounded-lg mt-2"
+          >
+            Kontakta oss
+          </button>
+        </a>
       </div>
     </div>
   </div>
