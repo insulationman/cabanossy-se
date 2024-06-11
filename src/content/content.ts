@@ -18,14 +18,14 @@ const postsCollection = defineCollection({
 
 const authors = defineCollection({
   type: "data",
-  schema: z.object({
-    name: z.string(),
-    bio: z.string(),
-    image: z.object({
-      url: z.string(),
-      alt: z.string(),
+  schema: ({ image }) =>
+    z.object({
+      name: z.string(),
+      bio: z.string(),
+      image: image().refine((img) => img.width >= 100, {
+        message: "Cover image must be at least 100 pixels wide!",
+      }),
     }),
-  }),
 });
 
 // Export a single `collections` object to register your collection(s)
