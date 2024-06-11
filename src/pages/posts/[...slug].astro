@@ -20,17 +20,10 @@ export async function getStaticPaths() {
 import { Image } from "astro:assets";
 
 const { post } = Astro.props;
-const author = await getEntry("authors", post.data.author);
+
+const author = await getEntry(post.data.author);
+
 const { Content } = await post.render();
-
-const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/*.{jpeg,jpg,png,gif}"
-);
-
-if (!images[author.data.image])
-  throw new Error(
-    `"${author.data.image}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`
-  );
 ---
 
 <Layout title={post.data.title} description={post.data.description}>

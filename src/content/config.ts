@@ -3,17 +3,15 @@ import { z, defineCollection, reference } from "astro:content";
 // Define a `type` and `schema` for each collection
 const postsCollection = defineCollection({
   type: "content",
-  schema: z.object({
-    title: z.string(),
-    pubDate: z.date(),
-    description: z.string(),
-    author: reference("authors"),
-    image: z.object({
-      url: z.string(),
-      alt: z.string(),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      pubDate: z.date(),
+      description: z.string(),
+      author: reference("authors"),
+      image: image(),
+      tags: z.array(z.string()),
     }),
-    tags: z.array(z.string()),
-  }),
 });
 
 const authors = defineCollection({
