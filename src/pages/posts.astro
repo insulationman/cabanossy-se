@@ -1,0 +1,17 @@
+---
+import { getCollection } from "astro:content";
+
+const pageTitle = "My Astro Learning Blog";
+const allPosts = await getCollection("posts");
+---
+
+<p>This is where I will post about my journey learning Astro.</p>
+<ul>
+  {
+    allPosts.map((post) => (
+      <a href={`/posts/${post.slug}/`} title={post.data.title}>
+        <li>{post.data.title}</li>
+      </a>
+    ))
+  }
+</ul>
