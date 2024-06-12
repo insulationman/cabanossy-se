@@ -46,6 +46,17 @@ const { Content } = await post.render();
             <h1 class="text-4xl font-bold text-gray-900 mb-6">
               {post.data.title}
             </h1>
+            <!-- List badges for tags -->
+            <div class="flex">
+              <span class="pr-2 text-gray-600 font-semibold">Taggar:</span>
+              {
+                post.data.tags.map((tag) => (
+                  <span class="bg-blue-600 text-white text-sm font-semibold px-3 py-1 rounded-full mr-2 flex items-center">
+                    {tag}
+                  </span>
+                ))
+              }
+            </div>
             <Content />
           </div>
         </div>
