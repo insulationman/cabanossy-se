@@ -1,0 +1,16 @@
+---
+import Logo from "../assets/Cabanossy-Snurra_nobg_lightblue.svg";
+import { Image } from "astro:assets";
+---
+
+<div class="h-[250px] flex flex-col items-center justify-center">
+  <div class="flex flex-col items-center gap-8">
+    <a href="/">
+      <Image
+        src={Logo}
+        alt="Cabanossy Snurra logo"
+        class={"h-24 w-24 md:h-32 md:w-32 shrink rounded-full bg-blue-900 hover:shadow-lg transition-shadow "}
+      />
+    </a>
+  </div>
+</div>
