@@ -9,12 +9,14 @@ import BusinessAreas from "../components/BusinessAreas.astro";
 import CustomSoftwareCards from "../components/CustomSoftwareCards.astro";
 import OptimizedCard from "../components/OptimizedCard.astro";
 import IsolShowCaseCard from "../components/IsolShowCaseCard.astro";
+import OrganizationJSONLD from "@layouts/JSONLD/OrganizationJSONLD.astro";
 ---
 
 <Layout
   title="Cabanossy - Upplev utveckling"
   description="Vi utvecklar företags verksamheter med hjälp av webbplatser, mjukvara och en förståelse för människor."
 >
+  <OrganizationJSONLD slot="head" />
   <div class="items-center">
     <StartHero />
     <div class="flex flex-col items-center gap-8 pb-20">
