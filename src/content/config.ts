@@ -12,6 +12,7 @@ const postsCollection = defineCollection({
       author: reference("authors"),
       image: image().optional(),
       tags: z.array(z.string()),
+      language: z.enum(["en", "sv"]),
     }),
 });
 

@@ -6,7 +6,7 @@ type Props = {
   post: post;
 };
 
-const { title, description, pubDate, updateDate, tags, author } =
+const { title, description, pubDate, updateDate, tags, author, language } =
   Astro.props.post.data;
 
 const authordata = await getEntry(author);
@@ -28,6 +28,7 @@ const schema = {
   ...(updateDate && {
     dateModified: updateDate.toISOString().substring(0, 10),
   }),
+  inLanguage: language,
 };
 ---
 
