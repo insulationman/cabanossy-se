@@ -27,7 +27,7 @@ const { Content } = await post.render();
 ---
 
 <Layout title={post.data.title} description={post.data.description}>
-  <BlogpostJSONLD post={post} />
+  <BlogpostJSONLD post={post} slot="head" />
   <LogoBanner />
   <div class="pb-12 md:pb-20 px-3 xl:px-0">
     <div class="max-w-[1100px] mx-auto lg:flex">
