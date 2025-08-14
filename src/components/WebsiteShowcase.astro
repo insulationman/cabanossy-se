@@ -3,6 +3,8 @@ import ShowcaseSiteItem from "../components/ShowcaseSiteItem.astro";
 import VätterledensInvest from "../assets/VätterledenInvest.png";
 import vhab from "../assets/VätterledenHolding.png";
 import supai from "../assets/Supai.png";
+import LVD from "../assets/LVD_Svart.svg";
+import drop from "../assets/drop.png";
 ---
 
 <div class="gap-4 grid grid-cols-1 md:grid-cols-2 shrink">
@@ -26,5 +28,19 @@ import supai from "../assets/Supai.png";
     description="VHAB förvaltar och investerar i bland annat företag och fastigheter. Vi har tillsammans med webb-designers hjälpt dem att skapa sin webbplats."
     buttontext="Besök hemsidan"
     image={vhab}
+  />
+  <ShowcaseSiteItem
+    title="Le Violon Dingue"
+    link="https://leviolondingue.se"
+    description="Le Violon Dingue är ett stenugnsbageri i Stockholm som vill hålla sin hemsida stilren och dela med sig av sin Instagram-feed."
+    buttontext="Se deras hemsida"
+    image={LVD}
+  />
+  <ShowcaseSiteItem
+    title="Auson"
+    link="https://auson.se"
+    description="Auson är en internationell tillverkare av bl.a. produkter för byggnadsvård. Hemsida är översatt till flera språk och inehåller en stor mängd information om deras produkter."
+    buttontext="Besök hemsidan"
+    image={drop}
   />
 </div>
