@@ -7,6 +7,7 @@ import Together from "../assets/together.svg";
 import WebpageProcessCard from "../components/WebpageProcessCard.astro";
 import WebPageTechnologies from "../components/WebPageTechnologies.astro";
 import PortraitBridge from "../assets/bridge-portrait.jpg";
+import WebsiteShowcase from "@components/WebsiteShowcase.astro";
 ---
 
 <BusinessAreaLayout
@@ -15,6 +16,13 @@ import PortraitBridge from "../assets/bridge-portrait.jpg";
 >
   <div class="xl:w-[1300px] p-2 lg:p-0 mb-16">
     <WebpageProcessCard />
+  </div>
+  <div
+    class="flex flex-col items-center justify-left gap-4 px-3 pb-12 xl:px-0 md:pb-20"
+  >
+    <div class="max-w-[1300px] shrink">
+      <WebsiteShowcase />
+    </div>
   </div>
   <div class="max-w-[1300px] p-2 lg:p-0 gap-4 mb-16">
     <div>
